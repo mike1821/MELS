@@ -1,0 +1,85 @@
+english	test language	test language 2
+Error; Crop N balance error is more than the permitted margin\n	Error; Crop N balance error is more than the permitted margin\n	Error; Crop N balance error is more than the permitted margin\n
+Crop name 	Crop name 	Crop name 
+Percentage error = 	Percentage error = 	Percentage error = 
+negative duration	negative duration	negative duration
+Error - manure applied outside the period of this crop\n	Error - manure applied outside the period of this crop\n	Error - manure applied outside the period of this crop\n
+Crop sequence name = 	Crop sequence name = 	Crop sequence name = 
+Crop sequence number = 	Crop sequence number = 	Crop sequence number = 
+Crop name = 	Crop name = 	Crop name = 
+Crop source = 	Crop source = 	Crop source = 
+Error - total potential production of a crop cannot be zero\n	Error - total potential production of a crop cannot be zero\n	Error - total potential production of a crop cannot be zero\n
+Error - could not find crop in parameter file\n	Error - could not find crop in parameter file\n	Error - could not find crop in parameter file\n
+Error - unable to find ammonia emission factor for a manure\n	Error - unable to find ammonia emission factor for a manure\n	Error - unable to find ammonia emission factor for a manure\n
+Crop number 	Crop number 	Crop number 
+Crop start year 	Crop start year 	Crop start year 
+Error - insufficient mineral N available to satisfy immobilisation in soil\n	Error - insufficient mineral N available to satisfy immobilisation in soil\n	Error - insufficient mineral N available to satisfy immobilisation in soil\n
+Error - too many products in crop	Error - too many products in crop	Error - too many products in crop
+Error - modelled production lower than required production for grazed feed item \n	Error - modelled production lower than required production for grazed feed item \n	Error - modelled production lower than required production for grazed feed item \n
+Crop product = 	Crop product = 	Crop product = 
+Modelled yield	Modelled yield	Modelled yield
+Required yield	Required yield	Required yield
+"Error - modelled yield is zero\n"""	"Error - modelled yield is zero\n"""	"Error - modelled yield is zero\n"""
+Rotation name = 	Rotation name = 	Rotation name = 
+Error; modelled yield has not been calculated\n	Error; modelled yield has not been calculated\n	Error; modelled yield has not been calculated\n
+"Error; modelled yield exceeds expected yield by more than the permitted margin\n"""	"Error; modelled yield exceeds expected yield by more than the permitted margin\n"""	"Error; modelled yield exceeds expected yield by more than the permitted margin\n"""
+"Error; expected yield exceeds modelled yield by more than the permitted margin\n"""	"Error; expected yield exceeds modelled yield by more than the permitted margin\n"""	"Error; expected yield exceeds modelled yield by more than the permitted margin\n"""
+Expected yield= 	Expected yield= 	Expected yield= 
+Error; Crop C balance error is more than the permitted margin\n	Error; Crop C balance error is more than the permitted margin\n	Error; Crop C balance error is more than the permitted margin\n
+Error - cropping sequence number	Error - cropping sequence number	Error - cropping sequence number
+is less than one year	is less than one year	is less than one year
+Error - gap at end of cropping sequence number 	Error - gap at end of cropping sequence number 	Error - gap at end of cropping sequence number 
+Error - could not find soil type 	Error - could not find soil type 	Error - could not find soil type 
+ in parameter file\n	 in parameter file\n	 in parameter file\n
+Error - could not find C-Tool data for farm type 	Error - could not find C-Tool data for farm type 	Error - could not find C-Tool data for farm type 
+Error - could not find soil type 	Error - could not find soil type 	Error - could not find soil type 
+Error; Crop production iterations exceeds maximum\n	Error; Crop production iterations exceeds maximum\n	Error; Crop production iterations exceeds maximum\n
+Error; soil C balance is greater than the permitted margin\n	Error; soil C balance is greater than the permitted margin\n	Error; soil C balance is greater than the permitted margin\n
+Error; crop sequence C balance is greater than the permitted margin	Error; crop sequence C balance is greater than the permitted margin	Error; crop sequence C balance is greater than the permitted margin
+Error; crop sequence N balance is greater than the permitted margin	Error; crop sequence N balance is greater than the permitted margin	Error; crop sequence N balance is greater than the permitted margin
+Error; crop sequence soil C-Tool N balance is greater than the permitted margin\n	Error; crop sequence soil C-Tool N balance is greater than the permitted margin\n	Error; crop sequence soil C-Tool N balance is greater than the permitted margin\n
+"Error; C balance in C-Tool\n"""	"Error; C balance in C-Tool\n"""	"Error; C balance in C-Tool\n"""
+Error; C balance at farm scale deviates by more than the permitted margin	Error; C balance at farm scale deviates by more than the permitted margin	Error; C balance at farm scale deviates by more than the permitted margin
+Error; N balance at farm scale deviates by more than the permitted margin	Error; N balance at farm scale deviates by more than the permitted margin	Error; N balance at farm scale deviates by more than the permitted margin
+Absolute error = 	Absolute error = 	Absolute error = 
+could not find feeditem \n	could not find feeditem \n	could not find feeditem \n
+Error; attempt to combine two different feed items	Error; attempt to combine two different feed items	Error; attempt to combine two different feed items
+"Error; attempt to subtract two different feed items"""	"Error; attempt to subtract two different feed items"""	"Error; attempt to subtract two different feed items"""
+problem with reading: 	problem with reading: 	problem with reading: 
+ because of 	 because of 	 because of 
+the file name is 	the file name is 	the file name is 
+ is wrong	 is wrong	 is wrong
+could not find 	could not find 	could not find 
+the path is: 	the path is: 	the path is: 
+Error - number of months in parameters.xml is not 12	Error - number of months in parameters.xml is not 12	Error - number of months in parameters.xml is not 12
+problem finding manure to import: species group = 	problem finding manure to import: species group = 	problem finding manure to import: species group = 
+and storage type	and storage type	and storage type
+Error; grazed feed item not produced on farm.\n feed code =  	Error; grazed feed item not produced on farm.\n feed code =  	Error; grazed feed item not produced on farm.\n feed code =  
+Error; consumed grazed DM and modelled grazed DM differ by more than the permitted margin.\n Percentage error = 	Error; consumed grazed DM and modelled grazed DM differ by more than the permitted margin.\n Percentage error = 	Error; consumed grazed DM and modelled grazed DM differ by more than the permitted margin.\n Percentage error = 
+Feed code = 	Feed code = 	Feed code = 
+ Consumed DM = 	 Consumed DM = 	 Consumed DM = 
+Produced DM = 	Produced DM = 	Produced DM = 
+Error; Housing C balance error is more than the permitted margin\n	Error; Housing C balance error is more than the permitted margin\n	Error; Housing C balance error is more than the permitted margin\n
+Error; Housing N balance error is more than the permitted margin\n	Error; Housing N balance error is more than the permitted margin\n	Error; Housing N balance error is more than the permitted margin\n
+could not link houses	could not link houses	could not link houses
+Error - No manure storage destinations	Error - No manure storage destinations	Error - No manure storage destinations
+Error - two manure storage destinations receive solid manure	Error - two manure storage destinations receive solid manure	Error - two manure storage destinations receive solid manure
+Error - two manure storage destinations receive liquid manure	Error - two manure storage destinations receive liquid manure	Error - two manure storage destinations receive liquid manure
+Error - too manure storage destinations	Error - too manure storage destinations	Error - too manure storage destinations
+Species 	Species 	Species 
+", Livestocktype  "	", Livestocktype  "	", Livestocktype  "
+" not found in parameters.xml"""	" not found in parameters.xml"""	" not found in parameters.xml"""
+Sum of proportions of time in different housing does not equal 1.0 	Sum of proportions of time in different housing does not equal 1.0 	Sum of proportions of time in different housing does not equal 1.0 
+Energy system for livestock not found	Energy system for livestock not found	Energy system for livestock not found
+Protein system for livestock not found	Protein system for livestock not found	Protein system for livestock not found
+ - liveweight has fallen below zero!	 - liveweight has fallen below zero!	 - liveweight has fallen below zero!
+Error; Livestock C balance error is more than the permitted margin\n	Error; Livestock C balance error is more than the permitted margin\n	Error; Livestock C balance error is more than the permitted margin\n
+could not match StorageType and SpeciesGroup at ManureStore. Was trying to find StorageType	could not match StorageType and SpeciesGroup at ManureStore. Was trying to find StorageType	could not match StorageType and SpeciesGroup at ManureStore. Was trying to find StorageType
+ and speciesGroup 	 and speciesGroup 	 and speciesGroup 
+Error - manure type not found for manure storage 	Error - manure type not found for manure storage 	Error - manure type not found for manure storage 
+Error; N losses from manure storage 	Error; N losses from manure storage 	Error; N losses from manure storage 
+ exceed TAN present	 exceed TAN present	 exceed TAN present
+Error; Manure storage C balance error is more than the permitted margin\n	Error; Manure storage C balance error is more than the permitted margin\n	Error; Manure storage C balance error is more than the permitted margin\n
+Error; Manure storage N balance error is more than the permitted margin\n	Error; Manure storage N balance error is more than the permitted margin\n	Error; Manure storage N balance error is more than the permitted margin\n
+constant file not found	constant file not found	constant file not found
+Error - livestock are indicated as grazing but there are no fields to graze	Error - livestock are indicated as grazing but there are no fields to graze	Error - livestock are indicated as grazing but there are no fields to graze

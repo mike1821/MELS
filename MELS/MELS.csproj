@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="constants.xml" />
+    <None Remove="farm_67943_32.xml" />
+    <None Remove="feedstuff.xml" />
+    <None Remove="fertMan.xml" />
+    <None Remove="parameters.xml" />
+  </ItemGroup>
+
+</Project>

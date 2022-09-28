@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <layerClass>
+    <Identity>1</Identity>
+    <z_lower>
+      <Value>0.1</Value>
+      <Units>m</Units>
+      <Description>Depth below the soil surface of the lower boundary of the layer</Description>
+    </z_lower>
+    <fieldCapacity>
+      <Value>40</Value>
+      <Units></Units>
+      <Description>the field capacity is expressed as 100 * cubic metre/cubic metre</Description>
+    </fieldCapacity>
+  </layerClass>
+  <layerClass>
+    <Identity>2</Identity>
+    <z_lower>
+      <Value>0.2</Value>
+      <Units>mm</Units>
+      <Description>Depth below the soil surface of the lower boundary of the layer</Description>
+    </z_lower>
+    <fieldCapacity>
+      <Value>40</Value>
+      <Units></Units>
+      <Description>the field capacity is expressed as 100 * cubic metre/cubic metre</Description>
+    </fieldCapacity>
+  </layerClass>
+  <layerClass>
+    <Identity>3</Identity>
+    <z_lower>
+      <Value>0.5</Value>
+      <Units>mm</Units>
+      <Description>Depth below the soil surface of the lower boundary of the layer</Description>
+    </z_lower>
+    <fieldCapacity>
+      <Value>40</Value>
+      <Units></Units>
+      <Description>the field capacity is expressed as 100 * cubic metre/cubic metre</Description>
+    </fieldCapacity>
+  </layerClass>
+  <layerClass>
+    <Identity>4</Identity>
+    <z_lower>
+      <Value>1.0</Value>
+      <Units>mm</Units>
+      <Description>Depth below the soil surface of the lower boundary of the layer</Description>
+    </z_lower>
+    <fieldCapacity>
+      <Value>40</Value>
+      <Units></Units>
+      <Description>the field capacity is expressed as 100 * cubic metre/cubic metre</Description>
+    </fieldCapacity>
+  </layerClass>
+  <drainageConst>
+    <Value>0.4</Value>
+    <Units>mm</Units>
+    <Description>Rate at which water in excess of field capacity drains from any given layer</Description>
+  </drainageConst>
+  <maxRootingDepth>
+    <Value>1.0</Value>
+    <Units>mm</Units>
+    <Description>Maximum rooting depth of the soil</Description>
+  </maxRootingDepth>
+</xml>

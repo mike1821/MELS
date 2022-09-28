@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <constants>
+    <Identity>0</Identity>
+    <humification_const>
+      <Value>0.148</Value>
+      <Description>Proportion of degraded carbon that is partitioned to humus-like organic matter</Description>
+    </humification_const>
+    <alpha>
+      <Value>0.46</Value>
+      <Units>none</Units>
+      <Description>Concentration of carbon in organic matter</Description>
+    </alpha>
+    <spinupYearsBaseLine>
+      <Value>0</Value>
+      <Units>years</Units>
+      <Description>Number of years that is used in Ctool spinup of scenario if using adaptation (only if spinup is used)</Description>
+    </spinupYearsBaseLine>
+    <spinupYearsNonBaseLine>
+      <Value>0</Value>
+      <Units>years</Units>
+      <Description>Number of years that is used in Ctool spinup of projection scenario (only if spinup is used)</Description>
+    </spinupYearsNonBaseLine>
+    <absoluteGrazedDMtolerance>
+      <Value>50</Value>
+      <Units>kg DM/ha</Units>
+      <Description>Threshold below which any difference between production and consumption of grazed feed item is ignored, irrespective of the percentage error</Description>
+    </absoluteGrazedDMtolerance>
+    <rgas>
+      <Value>8.314</Value>
+      <Units>J/(mol K)</Units>
+      <Description>Universal gas constant</Description>
+    </rgas>
+    <CNhum>
+      <Value>12.0</Value>
+      <Units>none</Units>
+      <Description>C:N ratio of humus</Description>
+    </CNhum>
+    <tor>
+      <Value>0.63</Value>
+      <Units>none</Units>
+      <Description>Proportion of manure C degraded that is emitted as methane</Description>
+    </tor>
+    <Eapp>
+      <Value>112700</Value>
+      <Units>J/mol</Units>
+      <Description>Apparent activation energy</Description>
+    </Eapp>
+    <CO2EqCH4>
+      <Value>37.3</Value>
+      <Units>kg CO2 equivalents/kg CH4-C</Units>
+      <Description>CO2 equivalent of CH4-C (100 year)</Description>
+    </CO2EqCH4>
+    <CO2EqN2O>
+      <Value>416.4</Value>
+      <Units>kg CO2 equivalents/kg N2O-N</Units>
+      <Description>CO2 equivalent of N2O-N (100 year)</Description>
+    </CO2EqN2O>
+    <CO2EqsoilC>
+      <Value>3.667</Value>
+      <Units>kg CO2 equivalents/kg C</Units>
+      <Description>CO2 equivalent of carbon emitted as CO2 (100 year)</Description>
+    </CO2EqsoilC>
+    <IndirectNH3N2OFactor>
+      <Value>0.01</Value>
+      <Units>kg N2O-N emitted/kg NH3-N emitted</Units>
+      <Description>Emission factor for N2O emission from redeposited NH3 emissions</Description>
+    </IndirectNH3N2OFactor>
+    <IndirectNO3N2OFactor>
+      <Value>0.0075</Value>
+      <Units>kg N2O-N emitted/kg NO3-N leached</Units>
+      <Description>Emission factor for N2O emission from leached NO3-N - IPCC (2006)</Description>
+    </IndirectNO3N2OFactor>
+    <defaultBeddingCconc>
+      <Value>0.4</Value>
+      <Units>kg C/kg DM</Units>
+      <Description>Concentration of carbon in default bedding dry matter</Description>
+    </defaultBeddingCconc>
+    <defaultBeddingNconc>
+      <Value>0.0064</Value>
+      <Description>Concentration of nitrogen in default bedding dry matter</Description>
+      <Units>kg N/kg DM</Units>
+    </defaultBeddingNconc>
+    <InventorySystem>
+      <Identity>1</Identity>
+      <Description>IPCC 2006</Description>
+      <Value>1</Value>
+      <Units>none</Units>
+    </InventorySystem>
+    <InventorySystem>
+      <Identity>2</Identity>
+      <Description>FarmAC</Description>
+      <Value>2</Value>
+      <Units>none</Units>
+    </InventorySystem>
+    <ErrorToleranceYield>
+      <Value>0.02</Value>
+      <Description>Maximum difference between expected and modelled DM yield of crops</Description>
+      <Units>none</Units>
+    </ErrorToleranceYield>
+    <ErrorToleranceGrazing>
+      <Value>0.02</Value>
+      <Description>Maximum proportional difference between grazed crop DM and grazed crop intake</Description>
+      <Units>none</Units>
+    </ErrorToleranceGrazing>
+    <C-Tool>
+      <Description>C-Tool parameters</Description>
+      <timeStep>
+        <Value>0.00273972602</Value>
+        <Unit>year</Unit>
+        <Description>Time step of model (normally one day)</Description>
+      </timeStep>
+      <NumOfLayers>
+        <Value>2</Value>
+        <Unit>none</Unit>
+        <Description>Number of soil layers (currently not used i.e. fixed in code)</Description>
+      </NumOfLayers>
+      <FOMdecompositionrate>
+        <Value>1.44</Value>
+        <Unit>per year</Unit>
+        <Description>Decomposition rate of fresh organic matter</Description>
+      </FOMdecompositionrate>
+      <HUMdecompositionrate>
+        <Value>0.0336</Value>
+        <Unit>per year</Unit>
+        <Description>Decomposition rate of humic organic matter</Description>
+      </HUMdecompositionrate>
+      <ROMdecompositionrate>
+        <Value>0.000463</Value>
+        <Unit>per year</Unit>
+        <Description>Decomposition rate of resistant organic matter</Description>
+      </ROMdecompositionrate>
+      <fCO2>
+        <Value>0.628</Value>
+        <Unit>none</Unit>
+        <Description>Proportion of degraded humic and resistant organic matter emitted as CO2</Description>
+      </fCO2>
+      <ROMificationfraction>
+        <Value>0.012</Value>
+        <Unit>none</Unit>
+        <Description>Proportion of degraded humic organic matter that is partitioned to resistant organic matter</Description>
+      </ROMificationfraction>
+      <transportCoefficient>
+        <Value>0.03</Value>
+        <Unit>none</Unit>
+        <Description>Proportion of degraded organic matter transported to next layer</Description>
+      </transportCoefficient>
+    </C-Tool>
+    <EFNO3_IPCC>
+      <Description>Leaching fraction - IPCC (2006)</Description>
+      <Value>0.3</Value>
+      <Units>kg N2O-N/kg manure N</Units>
+    </EFNO3_IPCC>
+    <fert_EFNH3_IPCC>
+      <Description>Emission factor for NH3 and NOx - IPCC (2006)</Description>
+      <Value>0.1</Value>
+      <Units>kg NH3-N or NOx-N/kg fertiliser N</Units>
+    </fert_EFNH3_IPCC>
+    <man_EFNH3_IPCC>
+      <Description>Emission factor for NH3 and NOx - IPCC (2006)</Description>
+      <Value>0.2</Value>
+      <Units>kg NH3-N/kg manure N</Units>
+    </man_EFNH3_IPCC>
+    <adaptationTimePeriod>
+      <Description>Minimum length of the period over which flows will be calculated when using adaptation mode</Description>
+      <Value>200</Value>
+      <Units>years</Units>
+    </adaptationTimePeriod>
+    <minimumTimePeriod>
+      <Description>Minimum length of the period over which flows will be calculated when using projection mode</Description>
+      <Value>20</Value>
+      <Units>years</Units>
+    </minimumTimePeriod>
+    <maximumIterations>
+      <Description>Maximum number of iterations of crop production before model gives up and generates an error</Description>
+      <Value>50</Value>
+      <Units>none</Units>
+    </maximumIterations>
+    <lockSoilTypes>
+      <Description>If true, soil pools will be preserved for all crop sequences between adaptation and projection modes</Description>
+      <Value>true</Value>
+      <Units>-</Units>
+    </lockSoilTypes>
+    <CurrentInventorySystem>
+      <Name>IPCC 2006 </Name>
+      <Value>1</Value>
+    </CurrentInventorySystem>
+  </constants>
+</xml>
