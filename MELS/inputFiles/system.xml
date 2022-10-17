@@ -14,7 +14,7 @@
     <Note>DK dairy</Note>
   </settings>
   <CommonSettings>
-    <alternativePath>C:\Users\%USERNAME%\Desktop\MELS\MELS\inputFiles\</alternativePath>
+    <alternativePath>..\..\..\inputFiles\</alternativePath>
     <verbosityLevel>2</verbosityLevel>
     <logFile>true</logFile>
     <logScreen>true</logScreen>
