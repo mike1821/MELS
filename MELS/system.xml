@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <settings>
+    <Identity>0</Identity>
+    <constants>inputFiles\DK\constants.xml </constants>
+    <parameters>inputFiles\DK\parameters.xml</parameters>
+    <farm>inputFiles\DK\Dairy\farm_67943_32.xml</farm>
+    <fertAndManure>inputFiles\DK\fertMan.xml</fertAndManure>
+    <feedItems>inputFiles\DK\feedstuff.xml</feedItems>
+    <outputDir>outputFiles\DK\Dairy\</outputDir>
+    <pauseBeforeExit>true</pauseBeforeExit>
+    <stopOnError>true</stopOnError>
+    <Adaptation>-1</Adaptation>
+    <Note>DK dairy</Note>
+  </settings>
+  <CommonSettings>
+    <alternativePath>inputFiles\</alternativePath>
+    <verbosityLevel>2</verbosityLevel>
+    <logFile>true</logFile>
+    <logScreen>true</logScreen>
+  </CommonSettings>
+</xml>
