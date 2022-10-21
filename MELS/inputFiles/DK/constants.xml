@@ -67,7 +67,7 @@
       <Description>Emission factor for N2O emission from redeposited NH3 emissions</Description>
     </IndirectNH3N2OFactor>
     <IndirectNO3N2OFactor>
-      <Value>0.0075</Value>
+      <Value>0.0112</Value>
       <Units>kg N2O-N emitted/kg NO3-N leached</Units>
       <Description>Emission factor for N2O emission from leached NO3-N - IPCC (2006)</Description>
     </IndirectNO3N2OFactor>
@@ -148,17 +148,17 @@
     </C-Tool>
     <EFNO3_IPCC>
       <Description>Leaching fraction - IPCC (2006)</Description>
-      <Value>0.3</Value>
+      <Value>0.24</Value>
       <Units>kg N2O-N/kg manure N</Units>
     </EFNO3_IPCC>
     <fert_EFNH3_IPCC>
       <Description>Emission factor for NH3 and NOx - IPCC (2006)</Description>
-      <Value>0.1</Value>
+      <Value>0.11</Value>
       <Units>kg NH3-N or NOx-N/kg fertiliser N</Units>
     </fert_EFNH3_IPCC>
     <man_EFNH3_IPCC>
       <Description>Emission factor for NH3 and NOx - IPCC (2006)</Description>
-      <Value>0.2</Value>
+      <Value>0.21</Value>
       <Units>kg NH3-N/kg manure N</Units>
     </man_EFNH3_IPCC>
     <adaptationTimePeriod>
