@@ -8,10 +8,11 @@ Please always update the excel file upon completing a change in the
 code and/or the configuration files.
 
 # USAGE
-1. Build the application using MS Visual Studio.
-2. Copy the system.xml file inside the bin directory of the solution
-3. All input files are located inside inputFiles directory in the root path of the project
-4. All calculated results are placed inside outputFiles directory in the root path of the project.
+1. Download the project .zip file and extract its contents
+2. Install .NET framework 6.0 SDK from https://dotnet.microsoft.com/en-us/download
+3. Run a command prompt enter the project directory
+4. Type *dotnet run* 
+5. All calculated results are placed inside outputFiles directory in the root path of the project.
 
 # Online web UI link:
 https://www.farmac.dk/
