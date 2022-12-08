@@ -16,7 +16,8 @@ public class manureStore
     double StorageRefTemp;
     double meanTemp;
     double MCF; //needs to be AEZ specific
-    //double Bo;//needs to be AEZ specific
+    //MELS-2023
+    double AWMS;
     double EFStoreNH3;
     double EFStoreN20;
     double Lambda;
@@ -27,6 +28,7 @@ public class manureStore
     int identity;
     manure theManure;
     housing theHousing;
+    livestock theLiveStock;
 
     double tstore=0;
     double CdegradationRate;
@@ -60,6 +62,7 @@ public class manureStore
     double biogasCO2C = 0;
     double supplementaryN = 0;
     double supplementaryC = 0;
+    double feedStuff = 0;
     public List<feedItem> supplementaryFeedstock;
     //! A normal member. Get CCH4ST. Returning one value.
     /*!
@@ -226,7 +229,6 @@ public class manureStore
             StoresSolid = false;
         manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "b1";
         b1 = manureParamFile.getItemDouble("Value");
-//        manureParamFile.getItemDouble("Value");
         manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "lnArr";
         lnArr = manureParamFile.getItemDouble("Value");
         manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "ohmOrg";
@@ -235,6 +237,9 @@ public class manureStore
         ohmTAN = manureParamFile.getItemDouble("Value");
         manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "MCF";
         MCF = manureParamFile.getItemDouble("Value");
+        //MELS-2023
+        manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "AWMS";
+        AWMS = manureParamFile.getItemDouble("Value");
         switch (GlobalVars.Instance.getcurrentInventorySystem())
         {
             case 1:
@@ -489,15 +494,21 @@ public class manureStore
                 }
                 double Bo = theManure.GetBo();
                 CCH4ST = (1 / GlobalVars.Instance.getalpha()) * (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) * (Bo * 0.67 * MCF);//1.46
-                                                                                                                                                           // double fT=Math.Exp(((-1.22*100000)/rgas)*((1/(meanTemp + GlobalVars.absoluteTemp))-(1/(15.0 + GlobalVars.absoluteTemp))));
-                double km = 0.39;
+                // double fT=Math.Exp(((-1.22*100000)/rgas)*((1/(meanTemp + GlobalVars.absoluteTemp))-(1/(15.0 + GlobalVars.absoluteTemp))));
+                // double km = 0.39;
                 double VS = (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) / GlobalVars.Instance.getalpha();
-                //            CCH4ST = km * fT * VS * Bo * 0.67;
-                CCH4ST = MCF * VS * Bo * 0.67 * 12 / 16;
-                //            CCH4ST = MCF * fT * VS * Bo * 0.67;
-                CCO2ST = (CCH4ST * (1 - tor)) / tor;//1.47
+
+                // MELS-2023
+                // CCH4ST = MCF * VS * Bo * 0.67 * 12 / 16;
+                // In order to use MCF from ManureStorage "InventorySystem" parameter must be 0 in farm file. 
+                // We also need to adjust Cdegradation below by checking fertMan.xml file (selected fertiliser)
+                CCH4ST = (VS*365)*(Bo*0.67*MCF*AWMS);
+                Console.WriteLine("Calculating CCH4ST = " + CCH4ST + ", VS =" + VS + ", Bo = " + Bo + ", MCF = " + MCF + ", AWMS = " + AWMS);
+                CCO2ST = (CCH4ST * (1 - tor)) / tor;
+
                 double biogasC = CCH4ST + CCO2ST;
                 Cdegradation = biogasC / (1 - GlobalVars.Instance.getHumification_const());
+                Console.WriteLine("Cdegradation = " + Cdegradation + ", DegC = " + theManure.GetdegC() + ", nonDegC = " + theManure.GetnonDegC());
                 if (Cdegradation > theManure.GetdegC())
                 {
                     if (Cdegradation > (theManure.GetdegC() + theManure.GetnonDegC()))
@@ -532,6 +543,7 @@ public class manureStore
         biogasCO2C = propGasCapture * CCO2ST;
         CCO2ST -= biogasCO2C;
         CheckManureStoreCBalance();
+        CalculateFeedStuff();
     }
     //! A normal member. Do Nitrogen.
     public void DoNitrogen()
@@ -570,7 +582,7 @@ public class manureStore
                 break;
             case 3:
                 string message1 = "Out of date code in Manurestore.cs for " + name;
-            GlobalVars.Instance.Error(message1);
+                GlobalVars.Instance.Error(message1);
                 //if (CdegradationRate > 0)
                 //{
                 //    NDegOrgOut = NlabileOrgInstore * Math.Exp(-(CdegradationRate + ohmOrg) * tstore * GlobalVars.avgNumberOfDays);
@@ -712,6 +724,28 @@ public class manureStore
                 GlobalVars.Instance.Error(messageString);
           
         }
+        return retVal;
+    }
+
+    //! A normal member. Check Daily Feed Stuff. Returning one value.
+    /*!
+        \return a boolean value.
+    */
+    //MELS-2023
+    public bool CalculateFeedStuff()
+    {
+        bool retVal = false;
+        double numDays = GlobalVars.avgNumberOfDays;
+        theLiveStock = new livestock(); 
+
+        Console.WriteLine("numDays = " + numDays);
+        Console.WriteLine("GetDMintakeIPCC2019 = " + theLiveStock.GetDMintakeIPCC2019());
+        double grossEnergyIntake = 18*theLiveStock.GetDMintakeIPCC2019()/numDays;
+        double dietDigestibility = theLiveStock.GetDigestibility()/numDays;
+        double ash_conc = theLiveStock.GetDietAsh();
+
+        double feedStuff = grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45));
+        Console.WriteLine("feedStuff = " + feedStuff + ", grossEnergyIntake = " + grossEnergyIntake + ", dietDigestibility = " + dietDigestibility + " ash_conc = " + ash_conc);
         return retVal;
     }
 }

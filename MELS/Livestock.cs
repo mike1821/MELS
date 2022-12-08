@@ -135,6 +135,7 @@ public class livestock
     double maxNuseEfficiency;
 
     double DMintake;
+    double DMintake_IPCC2019;
     double DMgrazed;
     double FE;
     double concentrateDM;
@@ -353,6 +354,21 @@ public class livestock
      \return a double value.
     */
     public double GetDMintake() { return DMintake; }
+    //! A normal member, Get DMintake based on IPCC2019. Returning one double value.
+    /*!
+     \return a double value.
+    */
+    public double GetDMintakeIPCC2019() { return DMintake_IPCC2019; }
+    //! A normal member, Get Digestibility. Returning one double value.
+    /*!
+     \return a double value.
+    */
+    public double GetDigestibility() { return digestibilityDiet; }
+    //! A normal member, Get Diet ash. Returning one double value.
+    /*!
+     \return a double value.
+    */
+    public double GetDietAsh() { return diet_ash; }
     //! A normal member, Get DMgrazed. Returning one double value.
     /*!
      \return a double value.
@@ -839,6 +855,10 @@ public class livestock
     double dailyFaecalProtein()//g per animal per day - RedNex equation
     {
         double dailyDMI=DMintake/GlobalVars.avgNumberOfDays;
+        
+        //MELS-2023
+        DMintake_IPCC2019=(0.0185*liveweight) + (0.305*milkFat);
+        Console.WriteLine("DMintake_IPCC2019 = " + DMintake_IPCC2019 + ", liveweight = " + liveweight + ", milkFat = " + milkFat);
         double dailyNintake=1000*Nintake/GlobalVars.avgNumberOfDays;
         double faecalProtein = 0;
         if (dailyDMI < 5)
