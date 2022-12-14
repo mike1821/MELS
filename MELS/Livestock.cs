@@ -1901,7 +1901,7 @@ public class livestock
 
         double feedStuff = grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45));
         Console.WriteLine("feedStuff = " + feedStuff + ", grossEnergyIntake = " + grossEnergyIntake + ", dietDigestibility = " + dietDigestibility + " ash_conc = " + ash_conc);
-        return retVal;
+        return retVal; //returns VS 
     }
     //! a normal member. Write Livestock File.
     /*!

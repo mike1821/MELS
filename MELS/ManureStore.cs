@@ -502,7 +502,7 @@ public class manureStore
                 // CCH4ST = MCF * VS * Bo * 0.67 * 12 / 16;
                 // In order to use MCF from ManureStorage "InventorySystem" parameter must be 0 in farm file. 
                 // We also need to adjust Cdegradation below by checking fertMan.xml file (selected fertiliser)
-                CCH4ST = (VS*365)*(Bo*0.67*MCF*AWMS);
+                CCH4ST = (VS)*(Bo*0.67*MCF*AWMS); //use calculated value from new function
                 Console.WriteLine("Calculating CCH4ST = " + CCH4ST + ", VS =" + VS + ", Bo = " + Bo + ", MCF = " + MCF + ", AWMS = " + AWMS);
                 CCO2ST = (CCH4ST * (1 - tor)) / tor;
 
