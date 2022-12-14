@@ -530,20 +530,13 @@ public class manureStore
             case 3:
                 string message1 = "Un-upgraded code in manure storage " + name;
                 GlobalVars.Instance.Error(message1);
-                /*            CdegradationRate = b1 * Math.Pow(Math.E, lnArr - GlobalVars.Instance.getEapp() * (1 / (rgas * (meanTemp + GlobalVars.absoluteTemp)))); //1.48
-                            CdegST = theManure.GetdegC() * (1 - Math.Pow(Math.E, -CdegradationRate * tstore * GlobalVars.avgNumberOfDays));//1.49
-                            CCH4ST = CdegST * tor;//1.51
-                            CCO2ST = (CdegST * (1 - tor));//1.52
-                            theManure.SetdegC(theManure.GetdegC() - CdegST * (1 + GlobalVars.Instance.getHumification_const()));*/
-                break;//disable until can get workng properly
-                      //theManure.SethumicC(GlobalVars.Instance.getHumification_const() * CdegST);
+                break;
         }
         biogasCH4C = propGasCapture * CCH4ST;
         CCH4ST -= biogasCH4C;
         biogasCO2C = propGasCapture * CCO2ST;
         CCO2ST -= biogasCO2C;
         CheckManureStoreCBalance();
-        CalculateFeedStuff();
     }
     //! A normal member. Do Nitrogen.
     public void DoNitrogen()
@@ -724,28 +717,6 @@ public class manureStore
                 GlobalVars.Instance.Error(messageString);
           
         }
-        return retVal;
-    }
-
-    //! A normal member. Check Daily Feed Stuff. Returning one value.
-    /*!
-        \return a boolean value.
-    */
-    //MELS-2023
-    public bool CalculateFeedStuff()
-    {
-        bool retVal = false;
-        double numDays = GlobalVars.avgNumberOfDays;
-        theLiveStock = new livestock(); 
-
-        Console.WriteLine("numDays = " + numDays);
-        Console.WriteLine("GetDMintakeIPCC2019 = " + theLiveStock.GetDMintakeIPCC2019());
-        double grossEnergyIntake = 18*theLiveStock.GetDMintakeIPCC2019()/numDays;
-        double dietDigestibility = theLiveStock.GetDigestibility()/numDays;
-        double ash_conc = theLiveStock.GetDietAsh();
-
-        double feedStuff = grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45));
-        Console.WriteLine("feedStuff = " + feedStuff + ", grossEnergyIntake = " + grossEnergyIntake + ", dietDigestibility = " + dietDigestibility + " ash_conc = " + ash_conc);
         return retVal;
     }
 }

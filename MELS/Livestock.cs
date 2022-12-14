@@ -1406,6 +1406,7 @@ public class livestock
         DoCarbon();
         DoNitrogen();
         GetExcretaDeposition();
+        CalculateFeedStuff();
     }
     //! a normal member, Get Excreta Deposition.
     /*!
@@ -1880,6 +1881,27 @@ public class livestock
             GlobalVars.Instance.Error(messageString);
         }
         propExcretaField = (1 - PropExcretalDepositionHousing);
+    }
+
+        //! A normal member. Check Daily Feed Stuff. Returning one value.
+    /*!
+        \return a boolean value.
+    */
+    //MELS-2023
+    public bool CalculateFeedStuff()
+    {
+        bool retVal = false;
+        double numDays = GlobalVars.avgNumberOfDays;
+
+        Console.WriteLine("numDays = " + numDays);
+        Console.WriteLine("GetDMintakeIPCC2019 = " + GetDMintakeIPCC2019());
+        double grossEnergyIntake = 18*GetDMintakeIPCC2019()/numDays;
+        double dietDigestibility = GetDigestibility()/numDays;
+        double ash_conc = GetDietAsh()/DMintake;
+
+        double feedStuff = grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45));
+        Console.WriteLine("feedStuff = " + feedStuff + ", grossEnergyIntake = " + grossEnergyIntake + ", dietDigestibility = " + dietDigestibility + " ash_conc = " + ash_conc);
+        return retVal;
     }
     //! a normal member. Write Livestock File.
     /*!

@@ -23,6 +23,16 @@ public class ALFAM
     public double b_ma2Nmx = 3.1592;
     public double b_ma3Nmx = 2.2702;
     public double b_ma4Nmx = 2.9582;
+    //MELS-2023
+    public double b_ma5Nmx = 2.9582;
+    public double b_ma6Nmx = 2.9582;
+    public double b_ma7Nmx = 2.9582;
+    public double b_ma8Nmx = 2.9582;
+    public double b_ma9Nmx = 2.9582;
+    public double b_ma10Nmx = 2.9582;
+    public double b_ma11Nmx = 2.9582;
+    public double b_ma12Nmx = 2.9582;
+    public double b_ma13Nmx = 2.9582;
     public double b_mrNmx = -0.00433;
     public double b_mi0Nmx = 2.4291;
     public double b_met1Nmx = -0.6382;
@@ -117,6 +127,79 @@ public class ALFAM
             case 5:    // closed slot
                 Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
                            + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma4Nmx + b_mrNmx * appRate
+                           + b_mi0Nmx + b_met2Nmx);
+                km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
+                         + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
+
+                break;
+            //MELS-2023
+            case 6:    
+                Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
+                           + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma5Nmx + b_mrNmx * appRate
+                           + b_mi0Nmx + b_met2Nmx);
+                km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
+                         + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
+
+                break;
+            case 7:    
+                Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
+                           + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma6Nmx + b_mrNmx * appRate
+                           + b_mi0Nmx + b_met2Nmx);
+                km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
+                         + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
+
+                break;
+            case 8:    
+                Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
+                           + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma7Nmx + b_mrNmx * appRate
+                           + b_mi0Nmx + b_met2Nmx);
+                km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
+                         + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
+
+                break;
+            case 9:    
+                Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
+                           + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma8Nmx + b_mrNmx * appRate
+                           + b_mi0Nmx + b_met2Nmx);
+                km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
+                         + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
+
+                break;
+            case 10:    
+                Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
+                           + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma9Nmx + b_mrNmx * appRate
+                           + b_mi0Nmx + b_met2Nmx);
+                km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
+                         + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
+
+                break;
+            case 11:    
+                Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
+                           + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma10Nmx + b_mrNmx * appRate
+                           + b_mi0Nmx + b_met2Nmx);
+                km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
+                         + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
+
+                break;
+            case 12:    
+                Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
+                           + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma11Nmx + b_mrNmx * appRate
+                           + b_mi0Nmx + b_met2Nmx);
+                km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
+                         + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
+
+                break;
+            case 13:    
+                Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
+                           + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma12Nmx + b_mrNmx * appRate
+                           + b_mi0Nmx + b_met2Nmx);
+                km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
+                         + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
+
+                break;
+            case 14:    
+                Nmax = Math.Exp(b_Nmx0 + b_sm1Nmx * soilWet + b_atNmx * aveAirTemp + b_wsNmx * aveWindspeed
+                           + b_mt1Nmx * manureType + b_mdmNmx * initDM + b_mtanNmx * TAN + b_ma13Nmx + b_mrNmx * appRate
                            + b_mi0Nmx + b_met2Nmx);
                 km = Math.Exp(b_Km0 + b_sm1Km * soilWet + b_atKm * aveAirTemp + b_wsKm * aveWindspeed + b_mt1Km * manureType
                          + b_mdmKm * initDM + b_mtanKm * TAN + b_mrKm * appRate + b_met2Km);
