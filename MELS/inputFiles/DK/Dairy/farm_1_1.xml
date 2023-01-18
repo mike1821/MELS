@@ -1,19 +1,20 @@
 <?xml version="1.0" standalone="yes"?>
 <NewDataSet>
   <Farm>
-    <Identity>Greece</Identity>
-    <FarmNumber>115773</FarmNumber>
+    <Identity>1</Identity>
+    <FarmNumber>1</FarmNumber>
     <FarmOwnerName>Greece</FarmOwnerName>
     <FarmOwnerAddress />
     <FarmOwnerZipCode />
     <FarmOwnerTown />
     <FarmDescription />
-    <AgroEcologicalZone>2</AgroEcologicalZone>
+    <AgroEcologicalZone>15</AgroEcologicalZone>
+    <GeographicalZone>West</GeographicalZone>
     <FarmType>3</FarmType>
     <FarmTypeDescription>Kvægavler</FarmTypeDescription>
     <SelectedScenario>
       <Identity>1</Identity>
-      <FarmNumber>115774</FarmNumber>
+      <FarmNumber>1</FarmNumber>
       <Name>Scenario 1 - Baseline</Name>
       <NumberOfScenario>1</NumberOfScenario>
       <IS-ID>1</IS-ID>

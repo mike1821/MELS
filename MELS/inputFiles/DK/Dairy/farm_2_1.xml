@@ -3,19 +3,20 @@
 <?xml version="1.0" standalone="yes"?> 
 <NewDataSet>
   <Farm>
-    <Identity>115774</Identity>
-    <FarmNumber>115774</FarmNumber>
+    <Identity>2</Identity>
+    <FarmNumber>2</FarmNumber>
     <FarmOwnerName>Poland</FarmOwnerName>
     <FarmOwnerAddress />
     <FarmOwnerZipCode />
     <FarmOwnerTown />
     <FarmDescription />
-    <AgroEcologicalZone>2</AgroEcologicalZone>
+    <AgroEcologicalZone>16</AgroEcologicalZone>
+    <GeographicalZone>East</GeographicalZone>
     <FarmType>3</FarmType>
     <FarmTypeDescription>Case2</FarmTypeDescription>
     <SelectedScenario>
       <Identity>1</Identity>
-      <FarmNumber>115774</FarmNumber>
+      <FarmNumber>2</FarmNumber>
       <Name>Scenario 1 - Baseline</Name>
       <NumberOfScenario>1</NumberOfScenario>
       <IS-ID>1</IS-ID>
@@ -26,7 +27,7 @@
       </InventorySystem>
       <Rotation>
         <Identity>1</Identity>
-        <FarmNumber>115774</FarmNumber>
+        <FarmNumber>2</FarmNumber>
         <ScenarioID>1</ScenarioID>
         <NameOfRotation>1</NameOfRotation>
         <Area>65</Area>
@@ -169,7 +170,7 @@
       </Rotation>
       <Rotation>
         <Identity>2</Identity>
-        <FarmNumber>115774</FarmNumber>
+        <FarmNumber>2</FarmNumber>
         <ScenarioID>1</ScenarioID>
         <NameOfRotation>2</NameOfRotation>
         <Area>4</Area>
@@ -289,7 +290,7 @@
       </Rotation>
       <Rotation>
         <Identity>3</Identity>
-        <FarmNumber>115774</FarmNumber>
+        <FarmNumber>2</FarmNumber>
         <ScenarioID>1</ScenarioID>
         <NameOfRotation>3</NameOfRotation>
         <Area>6</Area>
@@ -495,7 +496,7 @@
       </Rotation>
       <Rotation>
         <Identity>5</Identity>
-        <FarmNumber>115774</FarmNumber>
+        <FarmNumber>2</FarmNumber>
         <ScenarioID>1</ScenarioID>
         <NameOfRotation>5</NameOfRotation>
         <Area>12</Area>
