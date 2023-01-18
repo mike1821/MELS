@@ -9,7 +9,7 @@
     <FarmOwnerTown />
     <FarmDescription />
     <AgroEcologicalZone>1</AgroEcologicalZone>
-    <GeographicalLocation>Western</GeographicalLocation>
+    <GeographicalZone>West</GeographicalZone>
     <FarmType>3</FarmType>
     <FarmTypeDescription>Kvægavler</FarmTypeDescription>
     <SelectedScenario>

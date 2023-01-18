@@ -227,6 +227,8 @@ namespace AnimalChange
                                 farmInformation.setPath(newPath);
                                 int zoneNr = farmInformation.getItemInt("AgroEcologicalZone");
                                 GlobalVars.Instance.SetZone(zoneNr);
+                                string locationNr = farmInformation.getItemString("GeographicalZone");
+                                GlobalVars.Instance.SetLocation(locationNr);
                                 int FarmTyp = farmInformation.getItemInt("FarmType");
                                 if (FarmTyp > 3)
                                     GlobalVars.Instance.Error("Farmtype not supported");

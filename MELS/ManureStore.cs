@@ -238,8 +238,14 @@ public class manureStore
         manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "MCF";
         MCF = manureParamFile.getItemDouble("Value");
         //MELS-2023
-        manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "AWMS";
+        if(GlobalVars.Instance.GetLocation() == "East"){
+            manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "AWMSEast";
+        }
+        else{
+            manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "AWMSWest";
+        }
         AWMS = manureParamFile.getItemDouble("Value");
+        Console.WriteLine("Detected " + GlobalVars.Instance.GetLocation() + ", Setting AWMS = " + AWMS );
         switch (GlobalVars.Instance.getcurrentInventorySystem())
         {
             case 1:

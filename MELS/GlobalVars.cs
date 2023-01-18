@@ -260,6 +260,7 @@ public class GlobalVars
     public System.IO.StreamWriter logFileStream;
 
     private int zoneNr;
+    private string locationNr;
     //! A normal member, Get Humification_const. Returning a double value.
     /*!
       \return a double value.
@@ -355,7 +356,17 @@ public class GlobalVars
       \param zone, an integer argument.
     */
     public void SetZone(int zone) { zoneNr = zone; }
-    //! A normal member, Get defaultBeddingCconc. Returning a double value.
+
+    //! A normal member, Get Location. Returning a string value (East/West).
+    /*!
+      \return an integer value.
+    */
+    public string GetLocation() { return locationNr; }
+    //! A normal member, Set location. Taking one argument.
+    /*!
+      \param location East/West, an string argument.
+    */
+    public void SetLocation(string location) { locationNr = location; }    //! A normal member, Get defaultBeddingCconc. Returning a double value.
     /*!
       \return a double value.
     */
