@@ -296,6 +296,7 @@ public class manureStore
         //int itemNr = 0;
         bool gotit = false;
         int j = min;
+
         while ((j <= max) && (gotit == false))
         {
             if(file.doesIDExist(j))
@@ -305,6 +306,7 @@ public class manureStore
                 int StoredTypeFile = file.getItemInt("ManureType");
                 int SpeciesGroupFile = file.getItemInt("SpeciesGroup");
                 string manureName = file.getItemString("Name");
+
                 if (StoredTypeFile == ManureStorageID && SpeciesGroupFile == speciesGroup)
                 {
                     //itemNr = j;
@@ -509,12 +511,10 @@ public class manureStore
                 // In order to use MCF from ManureStorage "InventorySystem" parameter must be 0 in farm file. 
                 // We also need to adjust Cdegradation below by checking fertMan.xml file (selected fertiliser)
                 CCH4ST = (VS)*(Bo*0.67*MCF*AWMS); //use calculated value from new function
-                Console.WriteLine("Calculating CCH4ST = " + CCH4ST + ", VS =" + VS + ", Bo = " + Bo + ", MCF = " + MCF + ", AWMS = " + AWMS);
                 CCO2ST = (CCH4ST * (1 - tor)) / tor;
 
                 double biogasC = CCH4ST + CCO2ST;
                 Cdegradation = biogasC / (1 - GlobalVars.Instance.getHumification_const());
-                Console.WriteLine("Cdegradation = " + Cdegradation + ", DegC = " + theManure.GetdegC() + ", nonDegC = " + theManure.GetnonDegC());
                 if (Cdegradation > theManure.GetdegC())
                 {
                     if (Cdegradation > (theManure.GetdegC() + theManure.GetnonDegC()))
