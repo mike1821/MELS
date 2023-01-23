@@ -9,6 +9,7 @@
     <FarmOwnerTown />
     <FarmDescription />
     <AgroEcologicalZone>15</AgroEcologicalZone>
+    <GeographicalZone>West</GeographicalZone>
     <FarmType>1</FarmType>
     <FarmTypeDescription>Planteavler</FarmTypeDescription>
     <SelectedScenario>
@@ -263,7 +264,7 @@
         <Species_group>1</Species_group>
         <LivestockType>3</LivestockType>
         <NameOfAnimals>Holstein types - young bulls</NameOfAnimals>
-        <NumberOfAnimals>120.00</NumberOfAnimals>
+        <NumberOfAnimals>100.00</NumberOfAnimals>
         <avgProductionMilk>0</avgProductionMilk>
         <avgProductionMeat>8500</avgProductionMeat>
         <ProductionLevel3>0</ProductionLevel3>
@@ -378,6 +379,124 @@
       </Livestock>
       <Livestock>
         <Identity>4</Identity>
+        <Species_group>1</Species_group>
+        <LivestockType>3</LivestockType>
+        <NameOfAnimals>Holstein types - young bulls</NameOfAnimals>
+        <NumberOfAnimals>20.00</NumberOfAnimals>
+        <avgProductionMilk>0</avgProductionMilk>
+        <avgProductionMeat>8500</avgProductionMeat>
+        <ProductionLevel3>0</ProductionLevel3>
+        <ScenarioID>1</ScenarioID>
+        <HerdID>3</HerdID>
+        <itemFed>
+          <Identity>3</Identity>
+          <FeedCode>155</FeedCode>
+          <Name>Soyabean meal</Name>
+          <Amount>0.528</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>3</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>7</Identity>
+          <FeedCode>204</FeedCode>
+          <Name>Maize</Name>
+          <Amount>1.5534</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>3</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>12</Identity>
+          <FeedCode>211</FeedCode>
+          <Name>Broadbeans</Name>
+          <Amount>0.02988</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>3</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>14</Identity>
+          <FeedCode>211</FeedCode>
+          <Name>Broadbeans</Name>
+          <Amount>0.02997</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>3</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>19</Identity>
+          <FeedCode>211</FeedCode>
+          <Name>Broadbeans</Name>
+          <Amount>0.2112</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>3</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>23</Identity>
+          <FeedCode>263</FeedCode>
+          <Name>Maize stillage</Name>
+          <Amount>3.25</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>3</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>26</Identity>
+          <FeedCode>625</FeedCode>
+          <Name>Clover hay, high fodder index</Name>
+          <Amount>0.894</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>3</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>30</Identity>
+          <FeedCode>785</FeedCode>
+          <Name>Oat - straw</Name>
+          <Amount>0.892</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>3</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <Housing>
+          <Identity>3</Identity>
+          <HousingType>6</HousingType>
+          <NameOfHousing>Deep litter</NameOfHousing>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <PropTime>1</PropTime>
+          <HerdID>3</HerdID>
+          <ManureRecipient>
+            <Identity>3</Identity>
+            <StorageType>3</StorageType>
+            <StorageName>Dunghill without cover</StorageName>
+            <Stable>6</Stable>
+            <HerdID>3</HerdID>
+            <LivestockType>3</LivestockType>
+            <Species_group>1</Species_group>
+          </ManureRecipient>
+        </Housing>
+      </Livestock>
+      <Livestock>
+        <Identity>5</Identity>
         <Species_group>1</Species_group>
         <LivestockType>3</LivestockType>
         <NameOfAnimals>Holstein - calves</NameOfAnimals>
