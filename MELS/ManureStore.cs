@@ -504,12 +504,13 @@ public class manureStore
                 CCH4ST = (1 / GlobalVars.Instance.getalpha()) * (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) * (Bo * 0.67 * MCF);//1.46
                 // double fT=Math.Exp(((-1.22*100000)/rgas)*((1/(meanTemp + GlobalVars.absoluteTemp))-(1/(15.0 + GlobalVars.absoluteTemp))));
                 // double km = 0.39;
-                double VS = (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) / GlobalVars.Instance.getalpha();
 
-                // MELS-2023
-                // CCH4ST = MCF * VS * Bo * 0.67 * 12 / 16;
                 // In order to use MCF from ManureStorage "InventorySystem" parameter must be 0 in farm file. 
                 // We also need to adjust Cdegradation below by checking fertMan.xml file (selected fertiliser)
+                // MELS-2023
+                // CCH4ST = MCF * VS * Bo * 0.67 * 12 / 16;
+                // double VS = (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) / GlobalVars.Instance.getalpha();
+                double VS = theLiveStock.CalculateFeedStuff();
                 CCH4ST = (VS)*(Bo*0.67*MCF*AWMS); //use calculated value from new function
                 CCO2ST = (CCH4ST * (1 - tor)) / tor;
 

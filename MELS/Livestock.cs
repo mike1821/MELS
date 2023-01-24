@@ -858,7 +858,6 @@ public class livestock
         
         //MELS-2023
         DMintake_IPCC2019=(0.0185*liveweight) + (0.305*milkFat);
-        Console.WriteLine("DMintake_IPCC2019 = " + DMintake_IPCC2019 + ", liveweight = " + liveweight + ", milkFat = " + milkFat);
         double dailyNintake=1000*Nintake/GlobalVars.avgNumberOfDays;
         double faecalProtein = 0;
         if (dailyDMI < 5)
@@ -1888,18 +1887,16 @@ public class livestock
         \return a boolean value.
     */
     //MELS-2023
-    public bool CalculateFeedStuff()
+    public double CalculateFeedStuff()
     {
-        bool retVal = false;
-
         double numDays = GlobalVars.avgNumberOfDays;
-        double grossEnergyIntake = 18*GetDMintakeIPCC2019()/numDays;
+
+        double grossEnergyIntake = 18*GetDMintake()/numDays;
         double dietDigestibility = GetDigestibility()/numDays;
         double ash_conc = GetDietAsh()/DMintake;
 
-        //MELS-2023
-        double feedStuff = grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45));
-        return retVal; //returns VS 
+        //MELS-2023      
+        return grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45)); 
     }
     //! a normal member. Write Livestock File.
     /*!
