@@ -47,8 +47,8 @@
         </itemFed>
         <itemFed>
           <Identity>8</Identity>
-          <FeedCode>204</FeedCode>
-          <Name>Maize</Name>
+          <FeedCode>244</FeedCode>
+          <Name>Maize germ</Name>
           <Amount>5.6958</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
@@ -58,8 +58,8 @@
         </itemFed>
         <itemFed>
           <Identity>16</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>927</FeedCode>
+          <Name>Sodium Chloride</Name>
           <Amount>0.10956</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
@@ -69,8 +69,8 @@
         </itemFed>
         <itemFed>
           <Identity>17</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>928</FeedCode>
+          <Name>Calcium carbonate</Name>
           <Amount>0.10989</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
@@ -80,8 +80,8 @@
         </itemFed>
         <itemFed>
           <Identity>20</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>929</FeedCode>
+          <Name>Regulator</Name>
           <Amount>0.2904</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
@@ -165,8 +165,8 @@
         </itemFed>
         <itemFed>
           <Identity>6</Identity>
-          <FeedCode>204</FeedCode>
-          <Name>Maize</Name>
+          <FeedCode>244</FeedCode>
+          <Name>Maize germ</Name>
           <Amount>1.5534</Amount>
           <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
@@ -176,8 +176,8 @@
         </itemFed>
         <itemFed>
           <Identity>11</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>927</FeedCode>
+          <Name>Sodium Chloride</Name>
           <Amount>0.02988</Amount>
           <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
@@ -187,8 +187,8 @@
         </itemFed>
         <itemFed>
           <Identity>13</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>928</FeedCode>
+          <Name>Calcium carbonate</Name>
           <Amount>0.02997</Amount>
           <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
@@ -198,8 +198,8 @@
         </itemFed>
         <itemFed>
           <Identity>18</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>929</FeedCode>
+          <Name>Regulator</Name>
           <Amount>0.2112</Amount>
           <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
@@ -283,8 +283,8 @@
         </itemFed>
         <itemFed>
           <Identity>7</Identity>
-          <FeedCode>204</FeedCode>
-          <Name>Maize</Name>
+          <FeedCode>244</FeedCode>
+          <Name>Maize germ</Name>
           <Amount>1.5534</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
@@ -294,8 +294,8 @@
         </itemFed>
         <itemFed>
           <Identity>12</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>927</FeedCode>
+          <Name>Sodium Chloride</Name>
           <Amount>0.02988</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
@@ -305,8 +305,8 @@
         </itemFed>
         <itemFed>
           <Identity>14</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>928</FeedCode>
+          <Name>Calcium carbonate</Name>
           <Amount>0.02997</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
@@ -316,8 +316,8 @@
         </itemFed>
         <itemFed>
           <Identity>19</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>929</FeedCode>
+          <Name>Regulator</Name>
           <Amount>0.2112</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
@@ -392,7 +392,7 @@
           <Identity>3</Identity>
           <FeedCode>155</FeedCode>
           <Name>Soyabean meal</Name>
-          <Amount>0.528</Amount>
+          <Amount>3.388</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
           <Species_group>1</Species_group>
@@ -401,9 +401,9 @@
         </itemFed>
         <itemFed>
           <Identity>7</Identity>
-          <FeedCode>204</FeedCode>
-          <Name>Maize</Name>
-          <Amount>1.5534</Amount>
+          <FeedCode>244</FeedCode>
+          <Name>Maize germ</Name>
+          <Amount>5.6958</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
           <Species_group>1</Species_group>
@@ -412,9 +412,9 @@
         </itemFed>
         <itemFed>
           <Identity>12</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
-          <Amount>0.02988</Amount>
+          <FeedCode>927</FeedCode>
+          <Name>Sodium Chloride</Name>
+          <Amount>0.10956</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
           <Species_group>1</Species_group>
@@ -423,20 +423,9 @@
         </itemFed>
         <itemFed>
           <Identity>14</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
-          <Amount>0.02997</Amount>
-          <Grazed>false</Grazed>
-          <LivestockType>3</LivestockType>
-          <Species_group>1</Species_group>
-          <HerdID>3</HerdID>
-          <Unit>kg DM/day</Unit>
-        </itemFed>
-        <itemFed>
-          <Identity>19</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
-          <Amount>0.2112</Amount>
+          <FeedCode>928</FeedCode>
+          <Name>Calcium carbonate</Name>
+          <Amount>0.10989</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
           <Species_group>1</Species_group>
@@ -519,8 +508,8 @@
         </itemFed>
         <itemFed>
           <Identity>5</Identity>
-          <FeedCode>204</FeedCode>
-          <Name>Maize</Name>
+          <FeedCode>244</FeedCode>
+          <Name>Maize germ</Name>
           <Amount>0.280475</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
@@ -530,9 +519,9 @@
         </itemFed>
         <itemFed>
           <Identity>9</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
-          <Amount>0.004996</Amount>
+          <FeedCode>927</FeedCode>
+          <Name>Sodium Chloride</Name>
+          <Amount>0.0049962</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
           <Species_group>1</Species_group>
@@ -541,9 +530,9 @@
         </itemFed>
         <itemFed>
           <Identity>10</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
-          <Amount>0.004999</Amount>
+          <FeedCode>928</FeedCode>
+          <Name>Calcium carbonate</Name>
+          <Amount>0.00499905</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
           <Species_group>1</Species_group>
@@ -552,8 +541,8 @@
         </itemFed>
         <itemFed>
           <Identity>15</Identity>
-          <FeedCode>211</FeedCode>
-          <Name>Broadbeans</Name>
+          <FeedCode>929</FeedCode>
+          <Name>Regulator</Name>
           <Amount>0.0405</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
