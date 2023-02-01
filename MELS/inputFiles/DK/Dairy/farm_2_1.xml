@@ -1,5 +1,3 @@
-<!--FertMan.xml should be updated in order to support the needed manure to be applied as a Fertilizer -->
-<!--Also we need a way in order how it will be applied since the UI doesnt give this option -->
 <?xml version="1.0" standalone="yes"?> 
 <NewDataSet>
   <Farm>
@@ -39,58 +37,60 @@
           <Start_day>29</Start_day>
           <Start_month>4</Start_month>
           <Start_year>2020</Start_year>
-          <End_day>10</End_day>
-          <End_month>7</End_month>
+          <End_day>7</End_day>
+          <End_month>10</End_month>
           <End_year>2020</End_year>
           <Irrigation>false</Irrigation>
-          <Fertilizer_applied>
+          <Manure_applied>
             <Identity>1</Identity>
-            <StorageID>34</StorageID>
-            <Name>Calcium nitrate</Name>
-            <DeliveryID>5</DeliveryID>
+            <StorageType>1</StorageType>
+            <Name>Cattle slurry</Name>
+            <DeliveryID>1</DeliveryID>
             <Unit>kg N/ha</Unit>
             <Value>3298.37</Value>
             <N_Loss>72.56414</N_Loss>
-            <Type>2</Type>
+            <Type>1</Type>
             <Kg_N_Utilized>0</Kg_N_Utilized>
-            <Month_applied>0</Month_applied>
+            <Month_applied>4</Month_applied>
             <RotationID>1</RotationID>
+            <SpeciesGroup>1</SpeciesGroup>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <MFId>0</MFId>
-            <Applic_technique_Fertilizer>
-              <NameS>Fertilizer spreading</NameS>
-              <NameI>5</NameI>
+            <Applic_technique_Manure>
+              <NameS>Injection</NameS>
+              <NameI>1</NameI>
               <RotationID>1</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
-              <StorageID>34</StorageID>
+              <StorageID>1</StorageID>
               <MFId>0</MFId>
-            </Applic_technique_Fertilizer>
-          </Fertilizer_applied>
-          <Fertilizer_applied>
-            <Identity>2</Identity>
-            <StorageID>39</StorageID>
-            <Name>Urea ammonium sulphate</Name>
-            <DeliveryID>5</DeliveryID>
+            </Applic_technique_Manure>
+          </Manure_applied>
+          <Manure_applied>
+            <Identity>1</Identity>
+            <StorageType>1</StorageType>
+            <Name>Cattle liquid fraction</Name>
+            <DeliveryID>1</DeliveryID>
             <Unit>kg N/ha</Unit>
             <Value>5497.28</Value>
             <N_Loss>120.94016</N_Loss>
-            <Type>2</Type>
+            <Type>1</Type>
             <Kg_N_Utilized>0</Kg_N_Utilized>
-            <Month_applied>0</Month_applied>
+            <Month_applied>4</Month_applied>
             <RotationID>1</RotationID>
+            <SpeciesGroup>1</SpeciesGroup>
             <FieldPlanRotationID>1</FieldPlanRotationID>
-            <MFId>1</MFId>
-            <Applic_technique_Fertilizer>
-              <NameS>Fertilizer spreading</NameS>
-              <NameI>5</NameI>
+            <MFId>0</MFId>
+            <Applic_technique_Manure>
+              <NameS>Injection</NameS>
+              <NameI>1</NameI>
               <RotationID>1</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
-              <StorageID>39</StorageID>
-              <MFId>1</MFId>
-            </Applic_technique_Fertilizer>
-          </Fertilizer_applied>
+              <StorageID>1</StorageID>
+              <MFId>0</MFId>
+            </Applic_technique_Manure>
+          </Manure_applied>
           <Fertilizer_applied>
-            <Identity>3</Identity>
+            <Identity>1</Identity>
             <StorageID>40</StorageID>
             <Name>Urea</Name>
             <DeliveryID>5</DeliveryID>
@@ -99,7 +99,7 @@
             <N_Loss>4.554</N_Loss>
             <Type>2</Type>
             <Kg_N_Utilized>0</Kg_N_Utilized>
-            <Month_applied>0</Month_applied>
+            <Month_applied>4</Month_applied>
             <RotationID>1</RotationID>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <MFId>2</MFId>
@@ -113,8 +113,8 @@
             </Applic_technique_Fertilizer>
           </Fertilizer_applied>
           <HarvestMethod>
-            <Value>Combine harvesting</Value>
-            <Description>Combine harvesting</Description>
+            <Value>Grazing</Value>
+            <Description>Grazing</Description>
             <Identity>1</Identity>
             <RotationID>1</RotationID>
           </HarvestMethod>
@@ -128,44 +128,32 @@
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <Grazed>false</Grazed>
             <Expected_yield>
-              <Value>0</Value>
+              <Value>65000</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>1</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
               <FeedstuffID>204</FeedstuffID>
             </Expected_yield>
             <Potential_yield>
-              <Value>0</Value>
+              <Value>65000</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>1</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
               <FeedstuffID>204</FeedstuffID>
             </Potential_yield>
           </Product>
-          <Product>
-            <Identity>7</Identity>
-            <Name>Maize stover</Name>
-            <Amount>0</Amount>
-            <FeedCode>786</FeedCode>
-            <Harvested>Harvested</Harvested>
-            <RotationID>1</RotationID>
-            <FieldPlanRotationID>1</FieldPlanRotationID>
-            <Grazed>false</Grazed>
-            <Expected_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>1</RotationID>
-              <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>786</FeedstuffID>
-            </Expected_yield>
-            <Potential_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>1</RotationID>
-              <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>786</FeedstuffID>
-            </Potential_yield>
-          </Product>
+        </Crop>
+        <Crop>
+          <Identity>2</Identity>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>2</RotationID>
+          <Start_day>8</Start_day>
+          <Start_month>10</Start_month>
+          <Start_year>2020</Start_year>
+          <End_day>28</End_day>
+          <End_month>4</End_month>
+          <End_year>2021</End_year>
+          <Irrigation>false</Irrigation>
         </Crop>
       </Rotation>
       <Rotation>
@@ -177,14 +165,14 @@
         <SoilType>Heavy Clayey Soil (&lt; 45% clay)</SoilType>
         <Crop>
           <Identity>1</Identity>
-          <NameOfCrop>Sunflower</NameOfCrop>
+          <NameOfCrop>Maize</NameOfCrop>
           <RotationID>2</RotationID>
-          <Start_day>17</Start_day>
-          <Start_month>1</Start_month>
-          <Start_year>2023</Start_year>
-          <End_day>17</End_day>
-          <End_month>1</End_month>
-          <End_year>2023</End_year>
+          <Start_day>10</Start_day>
+          <Start_month>4</Start_month>
+          <Start_year>2020</Start_year>
+          <End_day>10</End_day>
+          <End_month>7</End_month>
+          <End_year>2020</End_year>
           <Irrigation>true</Irrigation>
           <Fertilizer_applied>
             <Identity>4</Identity>
@@ -196,7 +184,7 @@
             <N_Loss>1.474</N_Loss>
             <Type>2</Type>
             <Kg_N_Utilized>0</Kg_N_Utilized>
-            <Month_applied>0</Month_applied>
+            <Month_applied>5</Month_applied>
             <RotationID>2</RotationID>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <MFId>0</MFId>
@@ -219,7 +207,7 @@
             <N_Loss>2.024</N_Loss>
             <Type>2</Type>
             <Kg_N_Utilized>0</Kg_N_Utilized>
-            <Month_applied>0</Month_applied>
+            <Month_applied>6</Month_applied>
             <RotationID>2</RotationID>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <MFId>1</MFId>
@@ -233,59 +221,47 @@
             </Applic_technique_Fertilizer>
           </Fertilizer_applied>
           <HarvestMethod>
-            <Value>Combine harvesting</Value>
-            <Description>Combine harvesting</Description>
+            <Value>Grazing</Value>
+            <Description>Grazing</Description>
             <Identity>1</Identity>
             <RotationID>2</RotationID>
           </HarvestMethod>
           <Product>
             <Identity>8</Identity>
-            <Name>Sunflower crop residues</Name>
+            <Name>Maize</Name>
             <Amount>0</Amount>
-            <FeedCode>950</FeedCode>
+            <FeedCode>204</FeedCode>
             <Harvested>Harvested</Harvested>
             <RotationID>2</RotationID>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <Grazed>false</Grazed>
             <Expected_yield>
-              <Value>0</Value>
+              <Value>6000</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>2</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
               <FeedstuffID>950</FeedstuffID>
             </Expected_yield>
             <Potential_yield>
-              <Value>0</Value>
+              <Value>6000</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>2</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
               <FeedstuffID>950</FeedstuffID>
             </Potential_yield>
           </Product>
-          <Product>
-            <Identity>9</Identity>
-            <Name>Sunflower seed</Name>
-            <Amount>0</Amount>
-            <FeedCode>217</FeedCode>
-            <Harvested>Harvested</Harvested>
-            <RotationID>2</RotationID>
-            <FieldPlanRotationID>1</FieldPlanRotationID>
-            <Grazed>false</Grazed>
-            <Expected_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>2</RotationID>
-              <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>217</FeedstuffID>
-            </Expected_yield>
-            <Potential_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>2</RotationID>
-              <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>217</FeedstuffID>
-            </Potential_yield>
-          </Product>
+        </Crop>
+        <Crop>
+          <Identity>2</Identity>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>2</RotationID>
+          <Start_day>11</Start_day>
+          <Start_month>7</Start_month>
+          <Start_year>2020</Start_year>
+          <End_day>9</End_day>
+          <End_month>4</End_month>
+          <End_year>2021</End_year>
+          <Irrigation>false</Irrigation>
         </Crop>
       </Rotation>
       <Rotation>
@@ -293,205 +269,123 @@
         <FarmNumber>2</FarmNumber>
         <ScenarioID>1</ScenarioID>
         <NameOfRotation>3</NameOfRotation>
-        <Area>6</Area>
+        <Area>4</Area>
         <SoilType>Heavy Clayey Soil (&lt; 45% clay)</SoilType>
         <Crop>
           <Identity>1</Identity>
           <NameOfCrop>Winter barley</NameOfCrop>
-          <RotationID>3</RotationID>
-          <Start_day>17</Start_day>
-          <Start_month>1</Start_month>
-          <Start_year>2023</Start_year>
-          <End_day>17</End_day>
-          <End_month>1</End_month>
-          <End_year>2023</End_year>
+          <RotationID>2</RotationID>
+          <Start_day>5</Start_day>
+          <Start_month>10</Start_month>
+          <Start_year>2020</Start_year>
+          <End_day>20</End_day>
+          <End_month>7</End_month>
+          <End_year>2021</End_year>
           <Irrigation>false</Irrigation>
           <HarvestMethod>
-            <Value>Combine harvesting</Value>
-            <Description>Combine harvesting</Description>
+            <Value>Grazing</Value>
+            <Description>Grazing</Description>
             <Identity>1</Identity>
-            <RotationID>3</RotationID>
+            <RotationID>2</RotationID>
           </HarvestMethod>
           <Product>
-            <Identity>10</Identity>
+            <Identity>8</Identity>
             <Name>Winter barley</Name>
             <Amount>0</Amount>
             <FeedCode>200</FeedCode>
             <Harvested>Harvested</Harvested>
-            <RotationID>3</RotationID>
+            <RotationID>2</RotationID>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <Grazed>false</Grazed>
             <Expected_yield>
-              <Value>0</Value>
+              <Value>4000</Value>
               <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
+              <RotationID>2</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>200</FeedstuffID>
+              <FeedstuffID>950</FeedstuffID>
             </Expected_yield>
             <Potential_yield>
-              <Value>0</Value>
+              <Value>4000</Value>
               <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
+              <RotationID>2</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>200</FeedstuffID>
-            </Potential_yield>
-          </Product>
-          <Product>
-            <Identity>11</Identity>
-            <Name>Winter barley - straw</Name>
-            <Amount>0</Amount>
-            <FeedCode>782</FeedCode>
-            <Harvested>Harvested</Harvested>
-            <RotationID>3</RotationID>
-            <FieldPlanRotationID>1</FieldPlanRotationID>
-            <Grazed>false</Grazed>
-            <Expected_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>782</FeedstuffID>
-            </Expected_yield>
-            <Potential_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>782</FeedstuffID>
+              <FeedstuffID>950</FeedstuffID>
             </Potential_yield>
           </Product>
         </Crop>
         <Crop>
           <Identity>2</Identity>
-          <NameOfCrop>Grass</NameOfCrop>
-          <RotationID>3</RotationID>
-          <Start_day>18</Start_day>
-          <Start_month>1</Start_month>
-          <Start_year>2023</Start_year>
-          <End_day>16</End_day>
-          <End_month>1</End_month>
-          <End_year>2024</End_year>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>2</RotationID>
+          <Start_day>21</Start_day>
+          <Start_month>7</Start_month>
+          <Start_year>2021</Start_year>
+          <End_day>4</End_day>
+          <End_month>10</End_month>
+          <End_year>2021</End_year>
+          <Irrigation>false</Irrigation>
+        </Crop>
+      </Rotation>
+      <Rotation>
+        <Identity>4</Identity>
+        <FarmNumber>2</FarmNumber>
+        <ScenarioID>1</ScenarioID>
+        <NameOfRotation>4</NameOfRotation>
+        <Area>6</Area>
+        <SoilType>Heavy Clayey Soil (&lt; 45% clay)</SoilType>
+        <Crop>
+          <Identity>1</Identity>
+          <NameOfCrop>Winter barley</NameOfCrop>
+          <RotationID>2</RotationID>
+          <Start_day>5</Start_day>
+          <Start_month>4</Start_month>
+          <Start_year>2020</Start_year>
+          <End_day>20</End_day>
+          <End_month>7</End_month>
+          <End_year>2020</End_year>
           <Irrigation>false</Irrigation>
           <HarvestMethod>
-            <Value>Forage harvester</Value>
-            <Description>Forage harvesting</Description>
-            <Identity>2</Identity>
-            <RotationID>3</RotationID>
+            <Value>Grazing</Value>
+            <Description>Grazing</Description>
+            <Identity>1</Identity>
+            <RotationID>2</RotationID>
           </HarvestMethod>
           <Product>
-            <Identity>2</Identity>
-            <Name>Grass - silage, high fodder index</Name>
+            <Identity>8</Identity>
+            <Name>Barley - wholcrop (early dough), middle fodder quality</Name>
             <Amount>0</Amount>
-            <FeedCode>564</FeedCode>
+            <FeedCode>583</FeedCode>
             <Harvested>Harvested</Harvested>
-            <RotationID>3</RotationID>
-            <FieldPlanRotationID>2</FieldPlanRotationID>
+            <RotationID>2</RotationID>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
             <Grazed>false</Grazed>
             <Expected_yield>
-              <Value>0</Value>
+              <Value>4000</Value>
               <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>2</FieldPlanRotationID>
-              <FeedstuffID>564</FeedstuffID>
+              <RotationID>2</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>950</FeedstuffID>
             </Expected_yield>
             <Potential_yield>
-              <Value>0</Value>
+              <Value>4000</Value>
               <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>2</FieldPlanRotationID>
-              <FeedstuffID>564</FeedstuffID>
-            </Potential_yield>
-          </Product>
-          <Product>
-            <Identity>5</Identity>
-            <Name>Grass, 20-25 cm grazed</Name>
-            <Amount>0</Amount>
-            <FeedCode>1466</FeedCode>
-            <Harvested>Harvested</Harvested>
-            <RotationID>3</RotationID>
-            <FieldPlanRotationID>2</FieldPlanRotationID>
-            <Grazed>true</Grazed>
-            <Expected_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>2</FieldPlanRotationID>
-              <FeedstuffID>1466</FeedstuffID>
-            </Expected_yield>
-            <Potential_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>2</FieldPlanRotationID>
-              <FeedstuffID>1466</FeedstuffID>
+              <RotationID>2</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>950</FeedstuffID>
             </Potential_yield>
           </Product>
         </Crop>
         <Crop>
-          <Identity>3</Identity>
-          <NameOfCrop>Winter barley</NameOfCrop>
-          <RotationID>3</RotationID>
-          <Start_day>17</Start_day>
-          <Start_month>1</Start_month>
-          <Start_year>2024</Start_year>
-          <End_day>16</End_day>
-          <End_month>1</End_month>
-          <End_year>2025</End_year>
+          <Identity>2</Identity>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>2</RotationID>
+          <Start_day>21</Start_day>
+          <Start_month>7</Start_month>
+          <Start_year>2020</Start_year>
+          <End_day>4</End_day>
+          <End_month>4</End_month>
+          <End_year>2021</End_year>
           <Irrigation>false</Irrigation>
-          <HarvestMethod>
-            <Value>Combine harvesting</Value>
-            <Description>Combine harvesting</Description>
-            <Identity>3</Identity>
-            <RotationID>3</RotationID>
-          </HarvestMethod>
-          <Product>
-            <Identity>1</Identity>
-            <Name>Barley - wholcrop (early dough), middle fodder index</Name>
-            <Amount>0</Amount>
-            <FeedCode>583</FeedCode>
-            <Harvested>Harvested</Harvested>
-            <RotationID>3</RotationID>
-            <FieldPlanRotationID>3</FieldPlanRotationID>
-            <Grazed>false</Grazed>
-            <Expected_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>3</FieldPlanRotationID>
-              <FeedstuffID>583</FeedstuffID>
-            </Expected_yield>
-            <Potential_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>3</FieldPlanRotationID>
-              <FeedstuffID>583</FeedstuffID>
-            </Potential_yield>
-          </Product>
-          <Product>
-            <Identity>12</Identity>
-            <Name>Winter barley - straw</Name>
-            <Amount>0</Amount>
-            <FeedCode>782</FeedCode>
-            <Harvested>Harvested</Harvested>
-            <RotationID>3</RotationID>
-            <FieldPlanRotationID>3</FieldPlanRotationID>
-            <Grazed>false</Grazed>
-            <Expected_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>3</FieldPlanRotationID>
-              <FeedstuffID>782</FeedstuffID>
-            </Expected_yield>
-            <Potential_yield>
-              <Value>0</Value>
-              <Unit>kg DM/ha</Unit>
-              <RotationID>3</RotationID>
-              <FieldPlanRotationID>3</FieldPlanRotationID>
-              <FeedstuffID>782</FeedstuffID>
-            </Potential_yield>
-          </Product>
         </Crop>
       </Rotation>
       <Rotation>
@@ -500,41 +394,42 @@
         <ScenarioID>1</ScenarioID>
         <NameOfRotation>5</NameOfRotation>
         <Area>12</Area>
-        <SoilType>Coarse Sandy Soil</SoilType>
+        <SoilType>Heavy Clayey Soil (&lt; 45% clay)</SoilType>
         <Crop>
           <Identity>1</Identity>
           <NameOfCrop>Grass</NameOfCrop>
           <RotationID>5</RotationID>
-          <Start_day>17</Start_day>
-          <Start_month>1</Start_month>
-          <Start_year>2023</Start_year>
+          <Start_day>5</Start_day>
+          <Start_month>4</Start_month>
+          <Start_year>2020</Start_year>
           <End_day>17</End_day>
           <End_month>1</End_month>
-          <End_year>2023</End_year>
+          <End_year>2021</End_year>
           <Irrigation>false</Irrigation>
-          <Fertilizer_applied>
-            <Identity>6</Identity>
-            <StorageID>34</StorageID>
-            <Name>Calcium nitrate</Name>
-            <DeliveryID>5</DeliveryID>
+          <Manure_applied>
+            <Identity>1</Identity>
+            <StorageType>1</StorageType>
+            <Name>Cattle slurry</Name>
+            <DeliveryID>1</DeliveryID>
             <Unit>kg N/ha</Unit>
-            <Value>1649.19</Value>
-            <N_Loss>36.28218</N_Loss>
-            <Type>2</Type>
+            <Value>549.73</Value>
+            <N_Loss>7.56414</N_Loss>
+            <Type>1</Type>
             <Kg_N_Utilized>0</Kg_N_Utilized>
-            <Month_applied>0</Month_applied>
-            <RotationID>5</RotationID>
+            <Month_applied>4</Month_applied>
+            <RotationID>1</RotationID>
+            <SpeciesGroup>1</SpeciesGroup>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <MFId>0</MFId>
-            <Applic_technique_Fertilizer>
-              <NameS>Fertilizer spreading</NameS>
-              <NameI>5</NameI>
-              <RotationID>5</RotationID>
+            <Applic_technique_Manure>
+              <NameS>Injection</NameS>
+              <NameI>1</NameI>
+              <RotationID>1</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
-              <StorageID>34</StorageID>
+              <StorageID>1</StorageID>
               <MFId>0</MFId>
-            </Applic_technique_Fertilizer>
-          </Fertilizer_applied>
+            </Applic_technique_Manure>
+          </Manure_applied>
           <HarvestMethod>
             <Value>Forage harvester</Value>
             <Description>Forage harvesting</Description>
@@ -551,44 +446,430 @@
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <Grazed>false</Grazed>
             <Expected_yield>
-              <Value>0</Value>
+              <Value>7500</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>5</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
               <FeedstuffID>564</FeedstuffID>
             </Expected_yield>
             <Potential_yield>
-              <Value>0</Value>
+              <Value>7500</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>5</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
               <FeedstuffID>564</FeedstuffID>
             </Potential_yield>
           </Product>
+        </Crop>
+        <Crop>
+          <Identity>2</Identity>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>2</RotationID>
+          <Start_day>18</Start_day>
+          <Start_month>1</Start_month>
+          <Start_year>2021</Start_year>
+          <End_day>4</End_day>
+          <End_month>4</End_month>
+          <End_year>2021</End_year>
+          <Irrigation>false</Irrigation>
+        </Crop>
+        <Crop>
+          <Identity>3</Identity>
+          <NameOfCrop>Grass</NameOfCrop>
+          <RotationID>5</RotationID>
+          <Start_day>5</Start_day>
+          <Start_month>4</Start_month>
+          <Start_year>2021</Start_year>
+          <End_day>17</End_day>
+          <End_month>1</End_month>
+          <End_year>2022</End_year>
+          <Irrigation>false</Irrigation>
+          <Manure_applied>
+            <Identity>1</Identity>
+            <StorageType>1</StorageType>
+            <Name>Cattle slurry</Name>
+            <DeliveryID>1</DeliveryID>
+            <Unit>kg N/ha</Unit>
+            <Value>549.73</Value>
+            <N_Loss>7.56414</N_Loss>
+            <Type>1</Type>
+            <Kg_N_Utilized>0</Kg_N_Utilized>
+            <Month_applied>4</Month_applied>
+            <RotationID>1</RotationID>
+            <SpeciesGroup>1</SpeciesGroup>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <MFId>0</MFId>
+            <Applic_technique_Manure>
+              <NameS>Injection</NameS>
+              <NameI>1</NameI>
+              <RotationID>1</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <StorageID>1</StorageID>
+              <MFId>0</MFId>
+            </Applic_technique_Manure>
+          </Manure_applied>
+          <HarvestMethod>
+            <Value>Forage harvester</Value>
+            <Description>Forage harvesting</Description>
+            <Identity>1</Identity>
+            <RotationID>5</RotationID>
+          </HarvestMethod>
           <Product>
-            <Identity>4</Identity>
-            <Name>Grass, 12-15 cm incorporated</Name>
+            <Identity>3</Identity>
+            <Name>Grass - silage, high fodder index</Name>
             <Amount>0</Amount>
-            <FeedCode>2465</FeedCode>
-            <Harvested>Incorporated</Harvested>
+            <FeedCode>564</FeedCode>
+            <Harvested>Harvested</Harvested>
             <RotationID>5</RotationID>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <Grazed>false</Grazed>
             <Expected_yield>
-              <Value>0</Value>
+              <Value>7500</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>5</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>2465</FeedstuffID>
+              <FeedstuffID>564</FeedstuffID>
             </Expected_yield>
             <Potential_yield>
-              <Value>0</Value>
+              <Value>7500</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>5</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>2465</FeedstuffID>
+              <FeedstuffID>564</FeedstuffID>
             </Potential_yield>
           </Product>
+        </Crop>
+        <Crop>
+          <Identity>4</Identity>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>2</RotationID>
+          <Start_day>18</Start_day>
+          <Start_month>1</Start_month>
+          <Start_year>2022</Start_year>
+          <End_day>4</End_day>
+          <End_month>4</End_month>
+          <End_year>2022</End_year>
+          <Irrigation>false</Irrigation>
+        </Crop>
+      <Crop>
+          <Identity>5</Identity>
+          <NameOfCrop>Grass</NameOfCrop>
+          <RotationID>5</RotationID>
+          <Start_day>5</Start_day>
+          <Start_month>4</Start_month>
+          <Start_year>2022</Start_year>
+          <End_day>17</End_day>
+          <End_month>1</End_month>
+          <End_year>2023</End_year>
+          <Irrigation>false</Irrigation>
+          <Manure_applied>
+            <Identity>1</Identity>
+            <StorageType>1</StorageType>
+            <Name>Cattle slurry</Name>
+            <DeliveryID>1</DeliveryID>
+            <Unit>kg N/ha</Unit>
+            <Value>549.73</Value>
+            <N_Loss>7.56414</N_Loss>
+            <Type>1</Type>
+            <Kg_N_Utilized>0</Kg_N_Utilized>
+            <Month_applied>4</Month_applied>
+            <RotationID>1</RotationID>
+            <SpeciesGroup>1</SpeciesGroup>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <MFId>0</MFId>
+            <Applic_technique_Manure>
+              <NameS>Injection</NameS>
+              <NameI>1</NameI>
+              <RotationID>1</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <StorageID>1</StorageID>
+              <MFId>0</MFId>
+            </Applic_technique_Manure>
+          </Manure_applied>
+          <HarvestMethod>
+            <Value>Forage harvester</Value>
+            <Description>Forage harvesting</Description>
+            <Identity>1</Identity>
+            <RotationID>5</RotationID>
+          </HarvestMethod>
+          <Product>
+            <Identity>3</Identity>
+            <Name>Grass - silage, high fodder index</Name>
+            <Amount>0</Amount>
+            <FeedCode>564</FeedCode>
+            <Harvested>Harvested</Harvested>
+            <RotationID>5</RotationID>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <Grazed>false</Grazed>
+            <Expected_yield>
+              <Value>7500</Value>
+              <Unit>kg DM/ha</Unit>
+              <RotationID>5</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>564</FeedstuffID>
+            </Expected_yield>
+            <Potential_yield>
+              <Value>7500</Value>
+              <Unit>kg DM/ha</Unit>
+              <RotationID>5</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>564</FeedstuffID>
+            </Potential_yield>
+          </Product>
+        </Crop>
+        <Crop>
+          <Identity>6</Identity>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>2</RotationID>
+          <Start_day>18</Start_day>
+          <Start_month>1</Start_month>
+          <Start_year>2023</Start_year>
+          <End_day>4</End_day>
+          <End_month>4</End_month>
+          <End_year>2023</End_year>
+          <Irrigation>false</Irrigation>
+        </Crop>
+      </Rotation>
+      <Rotation>
+        <Identity>6</Identity>
+        <FarmNumber>2</FarmNumber>
+        <ScenarioID>1</ScenarioID>
+        <NameOfRotation>6</NameOfRotation>
+        <Area>12</Area>
+        <SoilType>Heavy Clayey Soil (&lt; 45% clay)</SoilType>
+        <Crop>
+          <Identity>1</Identity>
+          <NameOfCrop>Grass</NameOfCrop>
+          <RotationID>5</RotationID>
+          <Start_day>5</Start_day>
+          <Start_month>4</Start_month>
+          <Start_year>2020</Start_year>
+          <End_day>17</End_day>
+          <End_month>1</End_month>
+          <End_year>2021</End_year>
+          <Irrigation>false</Irrigation>
+          <Manure_applied>
+            <Identity>1</Identity>
+            <StorageType>1</StorageType>
+            <Name>Cattle slurry</Name>
+            <DeliveryID>1</DeliveryID>
+            <Unit>kg N/ha</Unit>
+            <Value>549.73</Value>
+            <N_Loss>7.56414</N_Loss>
+            <Type>1</Type>
+            <Kg_N_Utilized>0</Kg_N_Utilized>
+            <Month_applied>4</Month_applied>
+            <RotationID>1</RotationID>
+            <SpeciesGroup>1</SpeciesGroup>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <MFId>0</MFId>
+            <Applic_technique_Manure>
+              <NameS>Injection</NameS>
+              <NameI>1</NameI>
+              <RotationID>1</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <StorageID>1</StorageID>
+              <MFId>0</MFId>
+            </Applic_technique_Manure>
+          </Manure_applied>
+          <HarvestMethod>
+            <Value>Forage harvester</Value>
+            <Description>Forage harvesting</Description>
+            <Identity>1</Identity>
+            <RotationID>5</RotationID>
+          </HarvestMethod>
+          <Product>
+            <Identity>3</Identity>
+            <Name>Grass - silage, high fodder index</Name>
+            <Amount>0</Amount>
+            <FeedCode>564</FeedCode>
+            <Harvested>Harvested</Harvested>
+            <RotationID>5</RotationID>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <Grazed>false</Grazed>
+            <Expected_yield>
+              <Value>7500</Value>
+              <Unit>kg DM/ha</Unit>
+              <RotationID>5</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>564</FeedstuffID>
+            </Expected_yield>
+            <Potential_yield>
+              <Value>7500</Value>
+              <Unit>kg DM/ha</Unit>
+              <RotationID>5</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>564</FeedstuffID>
+            </Potential_yield>
+          </Product>
+        </Crop>
+        <Crop>
+          <Identity>2</Identity>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>2</RotationID>
+          <Start_day>18</Start_day>
+          <Start_month>1</Start_month>
+          <Start_year>2021</Start_year>
+          <End_day>4</End_day>
+          <End_month>4</End_month>
+          <End_year>2021</End_year>
+          <Irrigation>false</Irrigation>
+        </Crop>
+        <Crop>
+          <Identity>3</Identity>
+          <NameOfCrop>Grass</NameOfCrop>
+          <RotationID>6</RotationID>
+          <Start_day>5</Start_day>
+          <Start_month>4</Start_month>
+          <Start_year>2021</Start_year>
+          <End_day>17</End_day>
+          <End_month>1</End_month>
+          <End_year>2022</End_year>
+          <Irrigation>false</Irrigation>
+          <Manure_applied>
+            <Identity>1</Identity>
+            <StorageType>1</StorageType>
+            <Name>Cattle slurry</Name>
+            <DeliveryID>1</DeliveryID>
+            <Unit>kg N/ha</Unit>
+            <Value>549.73</Value>
+            <N_Loss>7.56414</N_Loss>
+            <Type>1</Type>
+            <Kg_N_Utilized>0</Kg_N_Utilized>
+            <Month_applied>4</Month_applied>
+            <RotationID>1</RotationID>
+            <SpeciesGroup>1</SpeciesGroup>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <MFId>0</MFId>
+            <Applic_technique_Manure>
+              <NameS>Injection</NameS>
+              <NameI>1</NameI>
+              <RotationID>1</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <StorageID>1</StorageID>
+              <MFId>0</MFId>
+            </Applic_technique_Manure>
+          </Manure_applied>
+          <HarvestMethod>
+            <Value>Forage harvester</Value>
+            <Description>Forage harvesting</Description>
+            <Identity>1</Identity>
+            <RotationID>5</RotationID>
+          </HarvestMethod>
+          <Product>
+            <Identity>3</Identity>
+            <Name>Grass - silage, high fodder index</Name>
+            <Amount>0</Amount>
+            <FeedCode>564</FeedCode>
+            <Harvested>Harvested</Harvested>
+            <RotationID>5</RotationID>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <Grazed>false</Grazed>
+            <Expected_yield>
+              <Value>7500</Value>
+              <Unit>kg DM/ha</Unit>
+              <RotationID>5</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>564</FeedstuffID>
+            </Expected_yield>
+            <Potential_yield>
+              <Value>7500</Value>
+              <Unit>kg DM/ha</Unit>
+              <RotationID>5</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>564</FeedstuffID>
+            </Potential_yield>
+          </Product>
+        </Crop>
+        <Crop>
+          <Identity>4</Identity>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>6</RotationID>
+          <Start_day>18</Start_day>
+          <Start_month>1</Start_month>
+          <Start_year>2022</Start_year>
+          <End_day>4</End_day>
+          <End_month>4</End_month>
+          <End_year>2022</End_year>
+          <Irrigation>false</Irrigation>
+        </Crop>
+      <Crop>
+          <Identity>5</Identity>
+          <NameOfCrop>Grass</NameOfCrop>
+          <RotationID>6</RotationID>
+          <Start_day>5</Start_day>
+          <Start_month>4</Start_month>
+          <Start_year>2022</Start_year>
+          <End_day>17</End_day>
+          <End_month>1</End_month>
+          <End_year>2023</End_year>
+          <Irrigation>false</Irrigation>
+          <Manure_applied>
+            <Identity>1</Identity>
+            <StorageType>1</StorageType>
+            <Name>Cattle slurry</Name>
+            <DeliveryID>1</DeliveryID>
+            <Unit>kg N/ha</Unit>
+            <Value>549.73</Value>
+            <N_Loss>7.56414</N_Loss>
+            <Type>1</Type>
+            <Kg_N_Utilized>0</Kg_N_Utilized>
+            <Month_applied>4</Month_applied>
+            <RotationID>1</RotationID>
+            <SpeciesGroup>1</SpeciesGroup>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <MFId>0</MFId>
+            <Applic_technique_Manure>
+              <NameS>Injection</NameS>
+              <NameI>1</NameI>
+              <RotationID>1</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <StorageID>1</StorageID>
+              <MFId>0</MFId>
+            </Applic_technique_Manure>
+          </Manure_applied>
+          <HarvestMethod>
+            <Value>Forage harvester</Value>
+            <Description>Forage harvesting</Description>
+            <Identity>1</Identity>
+            <RotationID>5</RotationID>
+          </HarvestMethod>
+          <Product>
+            <Identity>3</Identity>
+            <Name>Grass - silage, high fodder index</Name>
+            <Amount>0</Amount>
+            <FeedCode>564</FeedCode>
+            <Harvested>Harvested</Harvested>
+            <RotationID>6</RotationID>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <Grazed>false</Grazed>
+            <Expected_yield>
+              <Value>7500</Value>
+              <Unit>kg DM/ha</Unit>
+              <RotationID>6</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>564</FeedstuffID>
+            </Expected_yield>
+            <Potential_yield>
+              <Value>7500</Value>
+              <Unit>kg DM/ha</Unit>
+              <RotationID>6</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <FeedstuffID>564</FeedstuffID>
+            </Potential_yield>
+          </Product>
+        </Crop>
+        <Crop>
+          <Identity>6</Identity>
+          <NameOfCrop>Bare soil</NameOfCrop>
+          <RotationID>6</RotationID>
+          <Start_day>18</Start_day>
+          <Start_month>1</Start_month>
+          <Start_year>2023</Start_year>
+          <End_day>4</End_day>
+          <End_month>4</End_month>
+          <End_year>2023</End_year>
+          <Irrigation>false</Irrigation>
         </Crop>
       </Rotation>
       <Livestock>
@@ -615,8 +896,8 @@
         </itemFed>
         <itemFed>
           <Identity>3</Identity>
-          <FeedCode>310</FeedCode>
-          <Name>Acidified raw milk</Name>
+          <FeedCode>930</FeedCode>
+          <Name>DDGS (Corn and Wheat</Name>
           <Amount>1.347</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
@@ -626,8 +907,8 @@
         </itemFed>
         <itemFed>
           <Identity>8</Identity>
-          <FeedCode>564</FeedCode>
-          <Name>Grass - silage, high fodder index</Name>
+          <FeedCode>929</FeedCode>
+          <Name>Regulator</Name>
           <Amount>0.35</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
@@ -700,8 +981,8 @@
         </itemFed>
         <itemFed>
           <Identity>9</Identity>
-          <FeedCode>576</FeedCode>
-          <Name>Broad beans, silage</Name>
+          <FeedCode>930</FeedCode>
+          <Name>DDGS (Corn and Wheat)</Name>
           <Amount>0.449</Amount>
           <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
@@ -741,8 +1022,8 @@
         <HerdID>3</HerdID>
         <itemFed>
           <Identity>1</Identity>
-          <FeedCode>173</FeedCode>
-          <Name>Sesame seed cake</Name>
+          <FeedCode>930</FeedCode>
+          <Name>DDGS (Corn and Wheat)</Name>
           <Amount>0.449</Amount>
           <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
@@ -826,8 +1107,8 @@
         </itemFed>
         <itemFed>
           <Identity>16</Identity>
-          <FeedCode>926</FeedCode>
-          <Name>Groundnut Hay</Name>
+          <FeedCode>930</FeedCode>
+          <Name>DDGS (Corn and Wheat)</Name>
           <Amount>0.449</Amount>
           <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
@@ -858,7 +1139,7 @@
         <Identity>5</Identity>
         <Species_group>1</Species_group>
         <LivestockType>3</LivestockType>
-        <NameOfAnimals>Holstein types - young bulls</NameOfAnimals>
+        <NameOfAnimals>Holstein - calves</NameOfAnimals>
         <NumberOfAnimals>60.00</NumberOfAnimals>
         <avgProductionMilk>0</avgProductionMilk>
         <avgProductionMeat>8500</avgProductionMeat>
@@ -917,54 +1198,6 @@
           </ManureRecipient>
         </Housing>
       </Livestock>
-      <Livestock>
-        <Identity>6</Identity>
-        <Species_group>2</Species_group>
-        <LivestockType>1</LivestockType>
-        <NameOfAnimals>Sows</NameOfAnimals>
-        <NumberOfAnimals>1</NumberOfAnimals>
-        <ProductionLevel3>60</ProductionLevel3>
-        <ScenarioID>1</ScenarioID>
-        <HerdID>1</HerdID>
-        <ProductionLevel>23.2</ProductionLevel>
-        <ProductionLevel2>7.2</ProductionLevel2>
-        <Housing>
-          <Identity>6</Identity>
-          <HousingType>7</HousingType>
-          <NameOfHousing>Single-housed, partially-slatted</NameOfHousing>
-          <LivestockType>1</LivestockType>
-          <Species_group>2</Species_group>
-          <PropTime>0.61</PropTime>
-          <HerdID>1</HerdID>
-          <ManureRecipient>
-            <Identity>1</Identity>
-            <StorageType>1</StorageType>
-            <StorageName>Slurry tank without crust/cover</StorageName>
-            <Stable>7</Stable>
-            <HerdID>1</HerdID>
-            <LivestockType>1</LivestockType>
-            <Species_group>2</Species_group>
-          </ManureRecipient>
-        </Housing>
-        <Housing>
-          <Identity>7</Identity>
-          <HousingType>11</HousingType>
-          <NameOfHousing>Boxed, fully-slatted</NameOfHousing>
-          <LivestockType>1</LivestockType>
-          <Species_group>2</Species_group>
-          <PropTime>0.39</PropTime>
-          <HerdID>1</HerdID>
-          <ManureRecipient>
-            <Identity>2</Identity>
-            <StorageType>1</StorageType>
-            <StorageName>Slurry tank without crust/cover</StorageName>
-            <Stable>11</Stable>
-            <HerdID>1</HerdID>
-            <LivestockType>1</LivestockType>
-            <Species_group>2</Species_group>
-          </ManureRecipient>
-        </Housing>
-      </Livestock>
       <EnergySystem>
         <Name>Metabolisable energy</Name>
         <Value>1</Value>
@@ -974,7 +1207,7 @@
       <Description>Rate of deposition of N from the atmosphere</Description>
       <Value>15</Value>
       <Units>Kg N/ha/year</Units>
-      <FarmNumber>115774</FarmNumber>
+      <FarmNumber>2</FarmNumber>
     </NDepositionRate>
   </Farm>
 </NewDataSet>

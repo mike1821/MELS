@@ -8,7 +8,7 @@
     <FarmOwnerZipCode />
     <FarmOwnerTown />
     <FarmDescription />
-    <AgroEcologicalZone>1</AgroEcologicalZone>
+    <AgroEcologicalZone>16</AgroEcologicalZone>
     <GeographicalZone>West</GeographicalZone>
     <FarmType>3</FarmType>
     <FarmTypeDescription>Kvægavler</FarmTypeDescription>
@@ -28,11 +28,11 @@
         <FarmNumber>67943</FarmNumber>
         <ScenarioID>32</ScenarioID>
         <NameOfRotation>Grass grazed</NameOfRotation>
-        <Area>42</Area>
-        <SoilType>Sandy Clayey Soil (&lt;= 40% fine sand)</SoilType>
+        <Area>65</Area>
+        <SoilType>Heavy Clayey Soil (&lt; 45% clay)</SoilType>
         <Crop>
           <Identity>1</Identity>
-          <NameOfCrop>Permanent grass</NameOfCrop>
+          <NameOfCrop>Maize</NameOfCrop>
           <RotationID>1</RotationID>
           <Start_day>1</Start_day>
           <Start_month>4</Start_month>
@@ -47,8 +47,32 @@
             <Name>Cattle slurry</Name>
             <DeliveryID>1</DeliveryID>
             <Unit>kg N/ha</Unit>
-            <Value>102</Value>
-            <N_Loss>2.244</N_Loss>
+            <Value>3298.37</Value>
+            <N_Loss>72.56414</N_Loss>
+            <Type>1</Type>
+            <Kg_N_Utilized>0</Kg_N_Utilized>
+            <Month_applied>4</Month_applied>
+            <RotationID>1</RotationID>
+            <SpeciesGroup>1</SpeciesGroup>
+            <FieldPlanRotationID>1</FieldPlanRotationID>
+            <MFId>0</MFId>
+            <Applic_technique_Manure>
+              <NameS>Injection</NameS>
+              <NameI>1</NameI>
+              <RotationID>1</RotationID>
+              <FieldPlanRotationID>1</FieldPlanRotationID>
+              <StorageID>1</StorageID>
+              <MFId>0</MFId>
+            </Applic_technique_Manure>
+          </Manure_applied>
+          <Manure_applied>
+            <Identity>1</Identity>
+            <StorageType>1</StorageType>
+            <Name>Cattle liquid fraction</Name>
+            <DeliveryID>1</DeliveryID>
+            <Unit>kg N/ha</Unit>
+            <Value>5497.28</Value>
+            <N_Loss>120.94016</N_Loss>
             <Type>1</Type>
             <Kg_N_Utilized>0</Kg_N_Utilized>
             <Month_applied>4</Month_applied>
@@ -67,38 +91,15 @@
           </Manure_applied>
           <Fertilizer_applied>
             <Identity>1</Identity>
-            <StorageID>31</StorageID>
-            <Name>Ammonium nitrate</Name>
+            <StorageID>40</StorageID>
+            <Name>Urea</Name>
             <DeliveryID>5</DeliveryID>
             <Unit>kg N/ha</Unit>
-            <Value>100</Value>
-            <N_Loss>2.2</N_Loss>
+            <Value>207</Value>
+            <N_Loss>4.554</N_Loss>
             <Type>2</Type>
             <Kg_N_Utilized>0</Kg_N_Utilized>
-            <Month_applied>5</Month_applied>
-            <RotationID>1</RotationID>
-            <FieldPlanRotationID>1</FieldPlanRotationID>
-            <MFId>1</MFId>
-            <Applic_technique_Fertilizer>
-              <NameS>Fertilizer spreading</NameS>
-              <NameI>5</NameI>
-              <RotationID>1</RotationID>
-              <FieldPlanRotationID>1</FieldPlanRotationID>
-              <StorageID>31</StorageID>
-              <MFId>1</MFId>
-            </Applic_technique_Fertilizer>
-          </Fertilizer_applied>
-          <Fertilizer_applied>
-            <Identity>2</Identity>
-            <StorageID>31</StorageID>
-            <Name>Ammonium nitrate</Name>
-            <DeliveryID>5</DeliveryID>
-            <Unit>kg N/ha</Unit>
-            <Value>100</Value>
-            <N_Loss>2.2</N_Loss>
-            <Type>2</Type>
-            <Kg_N_Utilized>0</Kg_N_Utilized>
-            <Month_applied>6</Month_applied>
+            <Month_applied>4</Month_applied>
             <RotationID>1</RotationID>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <MFId>2</MFId>
@@ -107,7 +108,7 @@
               <NameI>5</NameI>
               <RotationID>1</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
-              <StorageID>31</StorageID>
+              <StorageID>40</StorageID>
               <MFId>2</MFId>
             </Applic_technique_Fertilizer>
           </Fertilizer_applied>
@@ -119,26 +120,26 @@
           </HarvestMethod>
           <Product>
             <Identity>1</Identity>
-            <Name>Grass, 20-25 cm grazed</Name>
+            <Name>Maize</Name>
             <Amount>0</Amount>
-            <FeedCode>1466</FeedCode>
+            <FeedCode>204</FeedCode>
             <Harvested>Harvested</Harvested>
             <RotationID>1</RotationID>
             <FieldPlanRotationID>1</FieldPlanRotationID>
             <Grazed>true</Grazed>
             <Expected_yield>
-              <Value>8500</Value>
+              <Value>65000</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>1</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
               <FeedstuffID>1466</FeedstuffID>
             </Expected_yield>
             <Potential_yield>
-              <Value>9500</Value>
+              <Value>65000</Value>
               <Unit>kg DM/ha</Unit>
               <RotationID>1</RotationID>
               <FieldPlanRotationID>1</FieldPlanRotationID>
-              <FeedstuffID>1466</FeedstuffID>
+              <FeedstuffID>204</FeedstuffID>
             </Potential_yield>
           </Product>
         </Crop>
@@ -299,17 +300,17 @@
         <Species_group>1</Species_group>
         <LivestockType>1</LivestockType>
         <NameOfAnimals>Holstein types - dairy</NameOfAnimals>
-        <NumberOfAnimals>90.00</NumberOfAnimals>
+        <NumberOfAnimals>48.00</NumberOfAnimals>
         <avgProductionMilk>8500</avgProductionMilk>
         <avgProductionMeat>0</avgProductionMeat>
         <ProductionLevel3>0</ProductionLevel3>
-        <ScenarioID>32</ScenarioID>
+        <ScenarioID>1</ScenarioID>
         <HerdID>1</HerdID>
         <itemFed>
-          <Identity>1</Identity>
-          <FeedCode>151</FeedCode>
-          <Name>Soyabean cake</Name>
-          <Amount>0.8</Amount>
+          <Identity>2</Identity>
+          <FeedCode>278</FeedCode>
+          <Name>Cane molasses (treacle)</Name>
+          <Amount>0.2555</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
           <Species_group>1</Species_group>
@@ -318,9 +319,9 @@
         </itemFed>
         <itemFed>
           <Identity>3</Identity>
-          <FeedCode>201</FeedCode>
-          <Name>Spring barley</Name>
-          <Amount>3</Amount>
+          <FeedCode>930</FeedCode>
+          <Name>DDGS (Corn and Wheat</Name>
+          <Amount>1.347</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
           <Species_group>1</Species_group>
@@ -328,10 +329,21 @@
           <Unit>kg DM/day</Unit>
         </itemFed>
         <itemFed>
-          <Identity>6</Identity>
+          <Identity>8</Identity>
+          <FeedCode>929</FeedCode>
+          <Name>Regulator</Name>
+          <Amount>0.35</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>1</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>1</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>13</Identity>
           <FeedCode>593</FeedCode>
           <Name>Maize - silage, middle fodder index</Name>
-          <Amount>2.2</Amount>
+          <Amount>9.735</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
           <Species_group>1</Species_group>
@@ -339,22 +351,11 @@
           <Unit>kg DM/day</Unit>
         </itemFed>
         <itemFed>
-          <Identity>7</Identity>
-          <FeedCode>781</FeedCode>
-          <Name>Spring barley - straw</Name>
-          <Amount>0.53</Amount>
+          <Identity>15</Identity>
+          <FeedCode>665</FeedCode>
+          <Name>Grass hay</Name>
+          <Amount>5.39</Amount>
           <Grazed>false</Grazed>
-          <LivestockType>1</LivestockType>
-          <Species_group>1</Species_group>
-          <HerdID>1</HerdID>
-          <Unit>kg DM/day</Unit>
-        </itemFed>
-        <itemFed>
-          <Identity>9</Identity>
-          <FeedCode>1466</FeedCode>
-          <Name>Grass, 20-25 cm grazed</Name>
-          <Amount>9.2</Amount>
-          <Grazed>true</Grazed>
           <LivestockType>1</LivestockType>
           <Species_group>1</Species_group>
           <HerdID>1</HerdID>
@@ -362,17 +363,17 @@
         </itemFed>
         <Housing>
           <Identity>1</Identity>
-          <HousingType>3</HousingType>
-          <NameOfHousing>Cubical house - slatted floor</NameOfHousing>
+          <HousingType>6</HousingType>
+          <NameOfHousing>Deep litter</NameOfHousing>
           <LivestockType>1</LivestockType>
           <Species_group>1</Species_group>
           <PropTime>1</PropTime>
           <HerdID>1</HerdID>
           <ManureRecipient>
-            <Identity>1</Identity>
-            <StorageType>1</StorageType>
-            <StorageName>Slurry tank without crust/cover</StorageName>
-            <Stable>3</Stable>
+            <Identity>3</Identity>
+            <StorageType>3</StorageType>
+            <StorageName>Dunghill without cover</StorageName>
+            <Stable>6</Stable>
             <HerdID>1</HerdID>
             <LivestockType>1</LivestockType>
             <Species_group>1</Species_group>
@@ -382,51 +383,51 @@
       <Livestock>
         <Identity>2</Identity>
         <Species_group>1</Species_group>
-        <LivestockType>1</LivestockType>
-        <NameOfAnimals>Holstein types - dairy</NameOfAnimals>
-        <NumberOfAnimals>90.00</NumberOfAnimals>
-        <avgProductionMilk>8500</avgProductionMilk>
-        <avgProductionMeat>0</avgProductionMeat>
+        <LivestockType>2</LivestockType>
+        <NameOfAnimals>Holstein types - heifers</NameOfAnimals>
+        <NumberOfAnimals>8.00</NumberOfAnimals>
+        <avgProductionMilk>0</avgProductionMilk>
+        <avgProductionMeat>8500</avgProductionMeat>
         <ProductionLevel3>0</ProductionLevel3>
-        <ScenarioID>32</ScenarioID>
+        <ScenarioID>1</ScenarioID>
         <HerdID>2</HerdID>
         <itemFed>
-          <Identity>2</Identity>
-          <FeedCode>151</FeedCode>
-          <Name>Soyabean cake</Name>
-          <Amount>3</Amount>
+          <Identity>4</Identity>
+          <FeedCode>361</FeedCode>
+          <Name>Sugar beet</Name>
+          <Amount>0.444</Amount>
           <Grazed>false</Grazed>
-          <LivestockType>1</LivestockType>
+          <LivestockType>2</LivestockType>
           <Species_group>1</Species_group>
           <HerdID>2</HerdID>
           <Unit>kg DM/day</Unit>
         </itemFed>
         <itemFed>
-          <Identity>4</Identity>
-          <FeedCode>592</FeedCode>
-          <Name>Maize - silage, high fodder index</Name>
-          <Amount>12</Amount>
+          <Identity>9</Identity>
+          <FeedCode>930</FeedCode>
+          <Name>DDGS (Corn and Wheat)</Name>
+          <Amount>0.449</Amount>
           <Grazed>false</Grazed>
-          <LivestockType>1</LivestockType>
+          <LivestockType>2</LivestockType>
           <Species_group>1</Species_group>
           <HerdID>2</HerdID>
           <Unit>kg DM/day</Unit>
         </itemFed>
         <Housing>
           <Identity>2</Identity>
-          <HousingType>3</HousingType>
-          <NameOfHousing>Cubical house - slatted floor</NameOfHousing>
-          <LivestockType>1</LivestockType>
+          <HousingType>6</HousingType>
+          <NameOfHousing>Deep litter</NameOfHousing>
+          <LivestockType>2</LivestockType>
           <Species_group>1</Species_group>
           <PropTime>1</PropTime>
           <HerdID>2</HerdID>
           <ManureRecipient>
-            <Identity>2</Identity>
-            <StorageType>1</StorageType>
-            <StorageName>Slurry tank without crust/cover</StorageName>
-            <Stable>3</Stable>
+            <Identity>4</Identity>
+            <StorageType>3</StorageType>
+            <StorageName>Dunghill without cover</StorageName>
+            <Stable>6</Stable>
             <HerdID>2</HerdID>
-            <LivestockType>1</LivestockType>
+            <LivestockType>2</LivestockType>
             <Species_group>1</Species_group>
           </ManureRecipient>
         </Housing>
@@ -436,17 +437,17 @@
         <Species_group>1</Species_group>
         <LivestockType>2</LivestockType>
         <NameOfAnimals>Holstein types - heifers</NameOfAnimals>
-        <NumberOfAnimals>90.00</NumberOfAnimals>
+        <NumberOfAnimals>20.00</NumberOfAnimals>
         <avgProductionMilk>0</avgProductionMilk>
-        <avgProductionMeat>700</avgProductionMeat>
+        <avgProductionMeat>8500</avgProductionMeat>
         <ProductionLevel3>0</ProductionLevel3>
-        <ScenarioID>32</ScenarioID>
+        <ScenarioID>1</ScenarioID>
         <HerdID>3</HerdID>
         <itemFed>
-          <Identity>5</Identity>
-          <FeedCode>593</FeedCode>
-          <Name>Maize - silage, middle fodder index</Name>
-          <Amount>2</Amount>
+          <Identity>1</Identity>
+          <FeedCode>930</FeedCode>
+          <Name>DDGS (Corn and Wheat)</Name>
+          <Amount>0.449</Amount>
           <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
           <Species_group>1</Species_group>
@@ -454,11 +455,22 @@
           <Unit>kg DM/day</Unit>
         </itemFed>
         <itemFed>
-          <Identity>8</Identity>
-          <FeedCode>1466</FeedCode>
-          <Name>Grass, 20-25 cm grazed</Name>
-          <Amount>1.6</Amount>
-          <Grazed>true</Grazed>
+          <Identity>5</Identity>
+          <FeedCode>361</FeedCode>
+          <Name>Sugar beet</Name>
+          <Amount>0.444</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>2</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>3</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>11</Identity>
+          <FeedCode>593</FeedCode>
+          <Name>Maize - silage, middle fodder index</Name>
+          <Amount>4.95</Amount>
+          <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
           <Species_group>1</Species_group>
           <HerdID>3</HerdID>
@@ -466,19 +478,145 @@
         </itemFed>
         <Housing>
           <Identity>3</Identity>
-          <HousingType>4</HousingType>
-          <NameOfHousing>Fully slatted floor</NameOfHousing>
+          <HousingType>6</HousingType>
+          <NameOfHousing>Deep litter</NameOfHousing>
           <LivestockType>2</LivestockType>
           <Species_group>1</Species_group>
           <PropTime>1</PropTime>
           <HerdID>3</HerdID>
           <ManureRecipient>
-            <Identity>3</Identity>
-            <StorageType>1</StorageType>
-            <StorageName>Slurry tank without crust/cover</StorageName>
-            <Stable>4</Stable>
+            <Identity>5</Identity>
+            <StorageType>3</StorageType>
+            <StorageName>Dunghill without cover</StorageName>
+            <Stable>6</Stable>
             <HerdID>3</HerdID>
             <LivestockType>2</LivestockType>
+            <Species_group>1</Species_group>
+          </ManureRecipient>
+        </Housing>
+      </Livestock>
+      <Livestock>
+        <Identity>4</Identity>
+        <Species_group>1</Species_group>
+        <LivestockType>2</LivestockType>
+        <NameOfAnimals>Holstein types - heifers</NameOfAnimals>
+        <NumberOfAnimals>10.00</NumberOfAnimals>
+        <avgProductionMilk>0</avgProductionMilk>
+        <avgProductionMeat>8500</avgProductionMeat>
+        <ProductionLevel3>0</ProductionLevel3>
+        <ScenarioID>1</ScenarioID>
+        <HerdID>4</HerdID>
+        <itemFed>
+          <Identity>6</Identity>
+          <FeedCode>361</FeedCode>
+          <Name>Sugar beet</Name>
+          <Amount>0.444</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>2</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>4</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>12</Identity>
+          <FeedCode>593</FeedCode>
+          <Name>Maize - silage, middle fodder index</Name>
+          <Amount>4.95</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>2</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>4</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>16</Identity>
+          <FeedCode>930</FeedCode>
+          <Name>DDGS (Corn and Wheat)</Name>
+          <Amount>0.449</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>2</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>4</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <Housing>
+          <Identity>4</Identity>
+          <HousingType>6</HousingType>
+          <NameOfHousing>Deep litter</NameOfHousing>
+          <LivestockType>2</LivestockType>
+          <Species_group>1</Species_group>
+          <PropTime>1</PropTime>
+          <HerdID>4</HerdID>
+          <ManureRecipient>
+            <Identity>6</Identity>
+            <StorageType>3</StorageType>
+            <StorageName>Dunghill without cover</StorageName>
+            <Stable>6</Stable>
+            <HerdID>4</HerdID>
+            <LivestockType>2</LivestockType>
+            <Species_group>1</Species_group>
+          </ManureRecipient>
+        </Housing>
+      </Livestock>
+      <Livestock>
+        <Identity>5</Identity>
+        <Species_group>1</Species_group>
+        <LivestockType>3</LivestockType>
+        <NameOfAnimals>Holstein - calves</NameOfAnimals>
+        <NumberOfAnimals>60.00</NumberOfAnimals>
+        <avgProductionMilk>0</avgProductionMilk>
+        <avgProductionMeat>8500</avgProductionMeat>
+        <ProductionLevel3>0</ProductionLevel3>
+        <ScenarioID>1</ScenarioID>
+        <HerdID>5</HerdID>
+        <itemFed>
+          <Identity>7</Identity>
+          <FeedCode>361</FeedCode>
+          <Name>Sugar beet</Name>
+          <Amount>0.444</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>5</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>10</Identity>
+          <FeedCode>593</FeedCode>
+          <Name>Maize - silage, middle fodder index</Name>
+          <Amount>0.33</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>5</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>14</Identity>
+          <FeedCode>625</FeedCode>
+          <Name>Clover hay, high fodder index</Name>
+          <Amount>1.00575</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>5</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <Housing>
+          <Identity>5</Identity>
+          <HousingType>6</HousingType>
+          <NameOfHousing>Deep litter</NameOfHousing>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <PropTime>1</PropTime>
+          <HerdID>5</HerdID>
+          <ManureRecipient>
+            <Identity>7</Identity>
+            <StorageType>3</StorageType>
+            <StorageName>Dunghill without cover</StorageName>
+            <Stable>6</Stable>
+            <HerdID>5</HerdID>
+            <LivestockType>3</LivestockType>
             <Species_group>1</Species_group>
           </ManureRecipient>
         </Housing>
