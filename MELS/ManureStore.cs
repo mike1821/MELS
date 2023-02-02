@@ -245,7 +245,6 @@ public class manureStore
             manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "AWMSWest";
         }
         AWMS = manureParamFile.getItemDouble("Value");
-        Console.WriteLine("Detected " + GlobalVars.Instance.GetLocation() + ", Setting AWMS = " + AWMS );
         switch (GlobalVars.Instance.getcurrentInventorySystem())
         {
             case 1:
@@ -402,7 +401,7 @@ public class manureStore
         GlobalVars.Instance.theManureExchange.AddToManureExchange(manureToManureExchange);
     }
     //! A normal member. Do Manurestore.
-    public void DoManurestore()
+    public void DoManurestore(double feedStuff)
     {
         supplementaryC = 0;
         supplementaryN = 0;
@@ -445,7 +444,7 @@ public class manureStore
                 theManure.SetnonDegC(theManure.GetnonDegC() + nondegSupplC);
                 theManure.SetlabileOrganicN(theManure.GetlabileOrganicN() + supplementaryN);
             }
-            DoCarbon();
+            DoCarbon(feedStuff);
             DoNitrogen();
             CheckManureStoreNBalance();
             UpdateManureExchange();
@@ -453,7 +452,7 @@ public class manureStore
         }
     }
     //! A normal member. Do Carbon.
-    public void DoCarbon()
+    public void DoCarbon(double feedStuff)
     {
         Cinput = GetManureC();
         double tor = GlobalVars.Instance.gettor();
@@ -509,9 +508,9 @@ public class manureStore
                 // We also need to adjust Cdegradation below by checking fertMan.xml file (selected fertiliser)
                 // MELS-2023
                 // CCH4ST = MCF * VS * Bo * 0.67 * 12 / 16;
-                // double VS = (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) / GlobalVars.Instance.getalpha();
-                double VS = theLiveStock.CalculateFeedStuff();
-                CCH4ST = (VS)*(Bo*0.67*MCF*AWMS); //use calculated value from new function
+                //double VS = (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) / GlobalVars.Instance.getalpha();
+                
+                CCH4ST = (feedStuff)*(Bo*0.67*MCF*AWMS); //use calculated value from new function
                 CCO2ST = (CCH4ST * (1 - tor)) / tor;
 
                 double biogasC = CCH4ST + CCO2ST;

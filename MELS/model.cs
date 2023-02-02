@@ -448,12 +448,15 @@ namespace AnimalChange
                                                 }
                                             }
                                         }
+
+                                        double feedStuff = 0;
                                         for (int i = 0; i < listOfLivestock.Count; i++)
                                         {
                                             livestock anAnimal = listOfLivestock[i];
                                             if (anAnimal.GetisRuminant())
                                             {
                                                 anAnimal.DoRuminant();
+                                                feedStuff += anAnimal.GetFeedStuff();
                                                 if ((GlobalVars.Instance.getRunFullModel()) &&
                                                         ((anAnimal.GetpropDMgrazed() > 0) && (maxRotation == 0)))
                                                 {
@@ -464,6 +467,7 @@ namespace AnimalChange
                                             else if (anAnimal.GetspeciesGroup() == 2)
                                             {
                                                 anAnimal.DoPig();
+                                                feedStuff += anAnimal.GetFeedStuff();
                                             }
 
                                         }
@@ -477,7 +481,7 @@ namespace AnimalChange
                                         for (int i = 0; i < listOfManurestores.Count; i++)
                                         {
                                             manureStore amanurestore2 = listOfManurestores[i];
-                                            amanurestore2.DoManurestore();
+                                            amanurestore2.DoManurestore(feedStuff);
                                         }
 
                                         if (!GlobalVars.Instance.getRunFullModel()) //only called when only the livestock excretion is needed

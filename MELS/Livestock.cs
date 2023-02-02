@@ -178,7 +178,8 @@ public class livestock
     double nman = 0;
     double vsg=0;///Annual production of manure from species group sg and store type s
     bool proteinLimited;
-
+    double feedStuff = 0;
+    public double GetFeedStuff() { return feedStuff;}
     //! A normal member, Get isDairy. Returning one boolean value.
     /*!
      \return a boolean value.
@@ -1676,6 +1677,7 @@ public class livestock
     {
         intake();
         DoGrowingPigs();
+        CalculateFeedStuff();
     }
     //! a normal member. Do Growing pigs
     /*!
@@ -1887,7 +1889,7 @@ public class livestock
         \return a boolean value.
     */
     //MELS-2023
-    public double CalculateFeedStuff()
+    public void CalculateFeedStuff()
     {
         double numDays = GlobalVars.avgNumberOfDays;
 
@@ -1896,7 +1898,7 @@ public class livestock
         double ash_conc = GetDietAsh()/DMintake;
 
         //MELS-2023      
-        return grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45)); 
+        feedStuff = grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45)); 
     }
     //! a normal member. Write Livestock File.
     /*!
