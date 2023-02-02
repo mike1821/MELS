@@ -856,9 +856,6 @@ public class livestock
     double dailyFaecalProtein()//g per animal per day - RedNex equation
     {
         double dailyDMI=DMintake/GlobalVars.avgNumberOfDays;
-        
-        //MELS-2023
-        DMintake_IPCC2019=(0.0185*liveweight) + (0.305*milkFat);
         double dailyNintake=1000*Nintake/GlobalVars.avgNumberOfDays;
         double faecalProtein = 0;
         if (dailyDMI < 5)
@@ -1238,6 +1235,8 @@ public class livestock
             feedItem anItem = feedRation[k];
             double amount = anItem.Getamount();
             DMintake += GlobalVars.avgNumberOfDays * amount;
+            //MELS-2023
+            DMintake_IPCC2019 += (0.0185*liveweight) + (0.305*milkFat);
             energyIntake += GlobalVars.avgNumberOfDays * amount * anItem.Getenergy_conc();
             diet_ash += GlobalVars.avgNumberOfDays * amount * anItem.Getash_conc();
             Nintake += GlobalVars.avgNumberOfDays * amount * anItem.GetN_conc();
