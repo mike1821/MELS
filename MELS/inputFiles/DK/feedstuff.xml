@@ -11555,7 +11555,7 @@
       <Description>The concentration of lignin (=acid detergent fibre)</Description>
     </Fibre_concentration>
     <NDF_concentration>
-      <Value color="green">-1</Value>
+      <Value color="green">0.25</Value>
       <Unit>kg/kgDM</Unit>
       <Description>Concentration of neutral detergent fibre</Description>
     </NDF_concentration>
@@ -18126,7 +18126,7 @@
   <feedItem>
     <Identity>338</Identity>
     <Name color="green">DDGS (Corn and Wheat)</Name>
-    <FeedCode color="red">1004</FeedCode>
+    <FeedCode color="red">930</FeedCode>
     <Main>
       <Value color="green">true</Value>
       <Unit>none</Unit>
