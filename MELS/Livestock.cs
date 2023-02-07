@@ -359,7 +359,11 @@ public class livestock
     /*!
      \return a double value.
     */
-    public double GetDMintakeIPCC2019() { return DMintake_IPCC2019; }
+    public double GetDMintakeIPCC2019() { 
+        //MELS-2023
+        DMintake_IPCC2019 = (0.0185*liveweight) + (0.305*milkFat);
+        return DMintake_IPCC2019; 
+    }
     //! A normal member, Get Digestibility. Returning one double value.
     /*!
      \return a double value.
@@ -1235,8 +1239,6 @@ public class livestock
             feedItem anItem = feedRation[k];
             double amount = anItem.Getamount();
             DMintake += GlobalVars.avgNumberOfDays * amount;
-            //MELS-2023
-            DMintake_IPCC2019 += (0.0185*liveweight) + (0.305*milkFat);
             energyIntake += GlobalVars.avgNumberOfDays * amount * anItem.Getenergy_conc();
             diet_ash += GlobalVars.avgNumberOfDays * amount * anItem.Getash_conc();
             Nintake += GlobalVars.avgNumberOfDays * amount * anItem.GetN_conc();
