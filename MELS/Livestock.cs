@@ -363,7 +363,6 @@ public class livestock
         //MELS-2023
 
         double dailyenergyIntake = energyIntake/GlobalVars.avgNumberOfDays;
-        Console.WriteLine("liveweight=" + liveweight + ", dailyenergyIntake=" + dailyenergyIntake);
         switch (livestockType)
         {
             case 1:
@@ -380,10 +379,10 @@ public class livestock
                 DMintake_IPCC2019 = liveweight*0.75*( ((0.0582*dailyenergyIntake - 0.00266*(dailyenergyIntake*dailyenergyIntake) - 0.1128)) / (0.239*dailyenergyIntake) );
             break;
             
-            case 3:
-            case 6:
-                DMintake_IPCC2019 = liveweight*0.75*( ((0.0582*dailyenergyIntake - 0.00266*(dailyenergyIntake*dailyenergyIntake) - 0.0869)) / (0.239*dailyenergyIntake) );
-            break;
+            // case 3:
+            // case 6:
+            //     DMintake_IPCC2019 = liveweight*0.75*( ((0.0582*dailyenergyIntake - 0.00266*(dailyenergyIntake*dailyenergyIntake) - 0.0869)) / (0.239*dailyenergyIntake) );
+            // break;
 
             default:
                 DMintake_IPCC2019 = 3.184 + (0.0143*liveweight*0.96);
