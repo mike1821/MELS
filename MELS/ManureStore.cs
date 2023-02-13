@@ -401,7 +401,7 @@ public class manureStore
         GlobalVars.Instance.theManureExchange.AddToManureExchange(manureToManureExchange);
     }
     //! A normal member. Do Manurestore.
-    public void DoManurestore(double feedStuff)
+    public void DoManurestore(double VS)
     {
         supplementaryC = 0;
         supplementaryN = 0;
@@ -444,7 +444,7 @@ public class manureStore
                 theManure.SetnonDegC(theManure.GetnonDegC() + nondegSupplC);
                 theManure.SetlabileOrganicN(theManure.GetlabileOrganicN() + supplementaryN);
             }
-            DoCarbon(feedStuff);
+            DoCarbon(VS);
             DoNitrogen();
             CheckManureStoreNBalance();
             UpdateManureExchange();
@@ -452,7 +452,7 @@ public class manureStore
         }
     }
     //! A normal member. Do Carbon.
-    public void DoCarbon(double feedStuff)
+    public void DoCarbon(double VS)
     {
         Cinput = GetManureC();
         double tor = GlobalVars.Instance.gettor();
@@ -510,7 +510,7 @@ public class manureStore
                 // CCH4ST = MCF * VS * Bo * 0.67 * 12 / 16;
                 //double VS = (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) / GlobalVars.Instance.getalpha();
                 
-                CCH4ST = (feedStuff)*(Bo*0.67*MCF*AWMS); //use calculated value from new function
+                CCH4ST = (VS)*(Bo*0.67*MCF*AWMS); //use calculated value from new function
                 CCO2ST = (CCH4ST * (1 - tor)) / tor;
 
                 double biogasC = CCH4ST + CCO2ST;

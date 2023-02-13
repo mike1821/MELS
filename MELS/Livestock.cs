@@ -178,8 +178,8 @@ public class livestock
     double nman = 0;
     double vsg=0;///Annual production of manure from species group sg and store type s
     bool proteinLimited;
-    double feedStuff = 0;
-    public double GetFeedStuff() { return feedStuff;}
+    double VS = 0;
+    public double GetVS() { return VS;}
     //! A normal member, Get isDairy. Returning one boolean value.
     /*!
      \return a boolean value.
@@ -359,9 +359,37 @@ public class livestock
     /*!
      \return a double value.
     */
-    public double GetDMintakeIPCC2019() { 
+    public double GetDMintakeIPCC2019(int livestockType) { 
         //MELS-2023
-        DMintake_IPCC2019 = (0.0185*liveweight) + (0.305*milkFat);
+
+        double dailyenergyIntake = energyIntake/GlobalVars.avgNumberOfDays;
+        Console.WriteLine("liveweight=" + liveweight + ", dailyenergyIntake=" + dailyenergyIntake);
+        switch (livestockType)
+        {
+            case 1:
+            case 4:
+            case 21:
+                DMintake_IPCC2019 = (0.0185*liveweight) + (0.305*milkFat);
+            break;
+            
+            case 15:
+                DMintake_IPCC2019 = 3.184 + (0.01536*liveweight*0.96);
+            break;
+            
+            case 19:
+                DMintake_IPCC2019 = liveweight*0.75*( ((0.0582*dailyenergyIntake - 0.00266*(dailyenergyIntake*dailyenergyIntake) - 0.1128)) / (0.239*dailyenergyIntake) );
+            break;
+            
+            case 3:
+            case 6:
+                DMintake_IPCC2019 = liveweight*0.75*( ((0.0582*dailyenergyIntake - 0.00266*(dailyenergyIntake*dailyenergyIntake) - 0.0869)) / (0.239*dailyenergyIntake) );
+            break;
+
+            default:
+                DMintake_IPCC2019 = 3.184 + (0.0143*liveweight*0.96);
+            break;
+        }
+
         return DMintake_IPCC2019; 
     }
     //! A normal member, Get Digestibility. Returning one double value.
@@ -453,6 +481,7 @@ public class livestock
     /*!
      \return a integer value.
     */
+    public int GetLiveStockIdentity() { return LivestockType; }
     public int GetspeciesGroup() { return speciesGroup; }
     //! A normal member, Get housing Details. Returning one list value.
     /*!
@@ -1407,7 +1436,7 @@ public class livestock
         DoCarbon();
         DoNitrogen();
         GetExcretaDeposition();
-        CalculateFeedStuff();
+        CalculateVS();
     }
     //! a normal member, Get Excreta Deposition.
     /*!
@@ -1678,7 +1707,7 @@ public class livestock
     {
         intake();
         DoGrowingPigs();
-        CalculateFeedStuff();
+        CalculateVS();
     }
     //! a normal member. Do Growing pigs
     /*!
@@ -1890,7 +1919,7 @@ public class livestock
         \return a boolean value.
     */
     //MELS-2023
-    public void CalculateFeedStuff()
+    public void CalculateVS()
     {
         double numDays = GlobalVars.avgNumberOfDays;
 
@@ -1899,7 +1928,7 @@ public class livestock
         double ash_conc = GetDietAsh()/DMintake;
 
         //MELS-2023      
-        feedStuff = grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45)); 
+        VS = grossEnergyIntake*(1-dietDigestibility) + 0.4*(grossEnergyIntake*((1-ash_conc)/18.45)); 
     }
     //! a normal member. Write Livestock File.
     /*!

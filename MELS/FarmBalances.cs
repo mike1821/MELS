@@ -1229,7 +1229,8 @@ class farmBalanceClass
             livestock anAnimalCategory = listOfLivestock[i];
             string livestockName=anAnimalCategory.Getname();
             double DMintake = anAnimalCategory.GetDMintake()/ GlobalVars.avgNumberOfDays;
-            double DMintake_IPCC2019 = anAnimalCategory.GetDMintakeIPCC2019();
+            Console.WriteLine("anAnimalCategory.Getname()=" + anAnimalCategory.Getname() + ", identity=" + anAnimalCategory.GetLiveStockIdentity());
+            double DMintake_IPCC2019 = anAnimalCategory.GetDMintakeIPCC2019(anAnimalCategory.GetLiveStockIdentity());
             GlobalVars.Instance.writeSummaryExcel(livestockName, "kg DM/day", DMintake);
             GlobalVars.Instance.writeSummaryExcel(livestockName, "kg DM/day (2019)", DMintake_IPCC2019);
             double numAnimals = anAnimalCategory.GetAvgNumberOfAnimal();
