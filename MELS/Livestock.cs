@@ -374,22 +374,27 @@ public class livestock
             case 15:
                 DMintake_IPCC2019 = 3.184 + (0.01536*liveweight*0.96);
             break;
-            
-            case 19:
-                DMintake_IPCC2019 = liveweight*0.75*( ((0.0582*dailyenergyIntake - 0.00266*(dailyenergyIntake*dailyenergyIntake) - 0.1128)) / (0.239*dailyenergyIntake) );
-            break;
-            
-            // case 3:
-            // case 6:
-            //     DMintake_IPCC2019 = liveweight*0.75*( ((0.0582*dailyenergyIntake - 0.00266*(dailyenergyIntake*dailyenergyIntake) - 0.0869)) / (0.239*dailyenergyIntake) );
-            // break;
-
-            default:
+            case 3:
+            case 6:
                 DMintake_IPCC2019 = 3.184 + (0.0143*liveweight*0.96);
+                
             break;
         }
 
         return DMintake_IPCC2019; 
+    }
+
+    public double GetDMintakeIPCC2019Growing() { 
+        //MELS-2023
+        double dailyenergyIntake = energyIntake/GlobalVars.avgNumberOfDays;
+        return liveweight*0.75*( ((0.0582*dailyenergyIntake - 0.00266*(dailyenergyIntake*dailyenergyIntake) - 0.0869)) / (0.239*dailyenergyIntake) ); 
+    }
+
+    public double GetDMintakeIPCC2019Calves() { 
+        //MELS-2023
+
+        double dailyenergyIntake = energyIntake/GlobalVars.avgNumberOfDays;
+        return liveweight*0.75*( ((0.0582*dailyenergyIntake - 0.00266*(dailyenergyIntake*dailyenergyIntake) - 0.1128)) / (0.239*dailyenergyIntake) );
     }
     //! A normal member, Get Digestibility. Returning one double value.
     /*!

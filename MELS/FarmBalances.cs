@@ -1229,9 +1229,21 @@ class farmBalanceClass
             livestock anAnimalCategory = listOfLivestock[i];
             string livestockName=anAnimalCategory.Getname();
             double DMintake = anAnimalCategory.GetDMintake()/ GlobalVars.avgNumberOfDays;
-            double DMintake_IPCC2019 = anAnimalCategory.GetDMintakeIPCC2019(anAnimalCategory.GetLiveStockIdentity());
             GlobalVars.Instance.writeSummaryExcel(livestockName, "kg DM/day", DMintake);
-            GlobalVars.Instance.writeSummaryExcel(livestockName, "kg DM/day (2019)", DMintake_IPCC2019);
+            
+            double DMintake_IPCC2019=0;
+            if(anAnimalCategory.GetLiveStockIdentity() == 19) //calves
+            {
+                DMintake_IPCC2019 = anAnimalCategory.GetDMintakeIPCC2019Growing();
+                GlobalVars.Instance.writeSummaryExcel(livestockName, "kg DM/day (Growing)", DMintake_IPCC2019);
+                DMintake_IPCC2019 = anAnimalCategory.GetDMintakeIPCC2019Calves();
+                GlobalVars.Instance.writeSummaryExcel(livestockName, "kg DM/day (Calves)", DMintake_IPCC2019);
+            }
+            else
+            {
+                DMintake_IPCC2019 = anAnimalCategory.GetDMintakeIPCC2019(anAnimalCategory.GetLiveStockIdentity());
+                GlobalVars.Instance.writeSummaryExcel(livestockName, "kg DM/day (2019)", DMintake_IPCC2019);
+            }
             double numAnimals = anAnimalCategory.GetAvgNumberOfAnimal();
             GlobalVars.Instance.writeSummaryExcel(livestockName, "number", numAnimals);
         }
