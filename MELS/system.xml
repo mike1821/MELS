@@ -4,7 +4,7 @@
     <Identity>0</Identity>
     <constants>inputFiles\DK\constants.xml </constants>
     <parameters>inputFiles\DK\parameters.xml</parameters>
-    <farm>inputFiles\DK\Dairy\farm_115893_1.xml</farm>
+    <farm>inputFiles\DK\Dairy\farm_1_1.xml</farm>
     <fertAndManure>inputFiles\DK\fertMan.xml</fertAndManure>
     <feedItems>inputFiles\DK\feedstuff.xml</feedItems>
     <outputDir>outputFiles\DK\Dairy\</outputDir>

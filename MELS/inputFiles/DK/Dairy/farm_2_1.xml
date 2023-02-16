@@ -15,12 +15,12 @@
     <SelectedScenario>
       <Identity>1</Identity>
       <FarmNumber>2</FarmNumber>
-      <Name>Scenario 1 - Baseline</Name>
+      <Name>Scenario 2 - Baseline</Name>
       <NumberOfScenario>1</NumberOfScenario>
       <IS-ID>1</IS-ID>
       <ES-ID>1</ES-ID>
       <InventorySystem>
-        <Name>IPCC 2006 </Name>
+        <Name>IPCC 2019 </Name>
         <Value>1</Value>
       </InventorySystem>
       <Rotation>
@@ -1138,7 +1138,7 @@
       <Livestock>
         <Identity>5</Identity>
         <Species_group>1</Species_group>
-        <LivestockType>3</LivestockType>
+        <LivestockType>19</LivestockType>
         <NameOfAnimals>Holstein - calves</NameOfAnimals>
         <NumberOfAnimals>60.00</NumberOfAnimals>
         <avgProductionMilk>0</avgProductionMilk>
