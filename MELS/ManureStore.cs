@@ -510,7 +510,7 @@ public class manureStore
                 // CCH4ST = MCF * VS * Bo * 0.67 * 12 / 16;
                 //double VS = (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) / GlobalVars.Instance.getalpha();
                 
-                CCH4ST = (VS)*(Bo*0.67*MCF*AWMS); //use calculated value from new function
+                CCH4ST = (VS)*(Bo*0.67*MCF*AWMS)*365; //use calculated value from new function
                 CCO2ST = (CCH4ST * (1 - tor)) / tor;
 
                 double biogasC = CCH4ST + CCO2ST;

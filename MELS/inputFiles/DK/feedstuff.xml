@@ -5655,7 +5655,7 @@
       <Description>The concentration of lignin (=acid detergent fibre)</Description>
     </Fibre_concentration>
     <NDF_concentration>
-      <Value color="green">-1</Value>
+      <Value color="green">0.22</Value>
       <Unit>kg/kgDM</Unit>
       <Description>Concentration of neutral detergent fibre</Description>
     </NDF_concentration>
@@ -13835,7 +13835,7 @@
       <Description>The concentration of lignin (=acid detergent fibre)</Description>
     </Fibre_concentration>
     <NDF_concentration>
-      <Value color="green">-1</Value>
+      <Value color="green">0.23</Value>
       <Unit>kg/kgDM</Unit>
       <Description>Concentration of neutral detergent fibre</Description>
     </NDF_concentration>

@@ -8,7 +8,7 @@
     <FarmOwnerZipCode />
     <FarmOwnerTown />
     <FarmDescription />
-    <AgroEcologicalZone>16</AgroEcologicalZone>
+    <AgroEcologicalZone>2</AgroEcologicalZone>
     <GeographicalZone>East</GeographicalZone>
     <FarmType>3</FarmType>
     <FarmTypeDescription>Case2</FarmTypeDescription>
@@ -165,7 +165,7 @@
         <SoilType>Heavy Clayey Soil (&lt; 45% clay)</SoilType>
         <Crop>
           <Identity>1</Identity>
-          <NameOfCrop>Maize</NameOfCrop>
+          <NameOfCrop>Ryegrass/oats</NameOfCrop>
           <RotationID>2</RotationID>
           <Start_day>10</Start_day>
           <Start_month>4</Start_month>
@@ -228,9 +228,9 @@
           </HarvestMethod>
           <Product>
             <Identity>8</Identity>
-            <Name>Maize</Name>
+            <Name>Ryegrass - straw</Name>
             <Amount>0</Amount>
-            <FeedCode>204</FeedCode>
+            <FeedCode>716</FeedCode>
             <Harvested>Harvested</Harvested>
             <RotationID>2</RotationID>
             <FieldPlanRotationID>1</FieldPlanRotationID>
@@ -897,7 +897,7 @@
         <itemFed>
           <Identity>3</Identity>
           <FeedCode>930</FeedCode>
-          <Name>DDGS (Corn and Wheat</Name>
+          <Name>DDGS (Corn and Wheat)</Name>
           <Amount>1.347</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
@@ -928,9 +928,9 @@
           <Unit>kg DM/day</Unit>
         </itemFed>
         <itemFed>
-          <Identity>15</Identity>
-          <FeedCode>665</FeedCode>
-          <Name>Grass hay</Name>
+          <Identity>176</Identity>
+          <FeedCode>565</FeedCode>
+          <Name>Grass - silage, middle fodder quality</Name>
           <Amount>5.39</Amount>
           <Grazed>false</Grazed>
           <LivestockType>1</LivestockType>
@@ -988,6 +988,28 @@
           <LivestockType>2</LivestockType>
           <Species_group>1</Species_group>
           <HerdID>2</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>13</Identity>
+          <FeedCode>593</FeedCode>
+          <Name>Maize - silage, middle fodder index</Name>
+          <Amount>1.947</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>1</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>1</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>176</Identity>
+          <FeedCode>665</FeedCode>
+          <Name>Grass hay</Name>
+          <Amount>1.205</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>1</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>1</HerdID>
           <Unit>kg DM/day</Unit>
         </itemFed>
         <Housing>
@@ -1053,6 +1075,17 @@
           <HerdID>3</HerdID>
           <Unit>kg DM/day</Unit>
         </itemFed>
+        <itemFed>
+          <Identity>176</Identity>
+          <FeedCode>665</FeedCode>
+          <Name>Grass hay</Name>
+          <Amount>0.788</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>1</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>1</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
         <Housing>
           <Identity>3</Identity>
           <HousingType>6</HousingType>
@@ -1098,7 +1131,7 @@
           <Identity>12</Identity>
           <FeedCode>593</FeedCode>
           <Name>Maize - silage, middle fodder index</Name>
-          <Amount>4.95</Amount>
+          <Amount>0.49712</Amount>
           <Grazed>false</Grazed>
           <LivestockType>2</LivestockType>
           <Species_group>1</Species_group>
@@ -1114,6 +1147,17 @@
           <LivestockType>2</LivestockType>
           <Species_group>1</Species_group>
           <HerdID>4</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <itemFed>
+          <Identity>177</Identity>
+          <FeedCode>665</FeedCode>
+          <Name>Grass hay</Name>
+          <Amount>0.3077</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>1</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>1</HerdID>
           <Unit>kg DM/day</Unit>
         </itemFed>
         <Housing>
@@ -1140,7 +1184,7 @@
         <Species_group>1</Species_group>
         <LivestockType>19</LivestockType>
         <NameOfAnimals>Holstein - calves</NameOfAnimals>
-        <NumberOfAnimals>60.00</NumberOfAnimals>
+        <NumberOfAnimals>20.00</NumberOfAnimals>
         <avgProductionMilk>0</avgProductionMilk>
         <avgProductionMeat>8500</avgProductionMeat>
         <ProductionLevel3>0</ProductionLevel3>
@@ -1158,21 +1202,62 @@
           <Unit>kg DM/day</Unit>
         </itemFed>
         <itemFed>
-          <Identity>10</Identity>
-          <FeedCode>593</FeedCode>
-          <Name>Maize - silage, middle fodder index</Name>
+          <Identity>176</Identity>
+          <FeedCode>565</FeedCode>
+          <Name>Grass - silage, middle fodder quality</Name>
           <Amount>0.33</Amount>
           <Grazed>false</Grazed>
-          <LivestockType>3</LivestockType>
+          <LivestockType>1</LivestockType>
           <Species_group>1</Species_group>
-          <HerdID>5</HerdID>
+          <HerdID>1</HerdID>
           <Unit>kg DM/day</Unit>
         </itemFed>
         <itemFed>
-          <Identity>14</Identity>
-          <FeedCode>625</FeedCode>
-          <Name>Clover hay, high fodder index</Name>
-          <Amount>1.00575</Amount>
+          <Identity>176</Identity>
+          <FeedCode>665</FeedCode>
+          <Name>Grass hay</Name>
+          <Amount>0.98438</Amount>
+          <Grazed>false</Grazed>
+          <LivestockType>1</LivestockType>
+          <Species_group>1</Species_group>
+          <HerdID>1</HerdID>
+          <Unit>kg DM/day</Unit>
+        </itemFed>
+        <Housing>
+          <Identity>5</Identity>
+          <HousingType>6</HousingType>
+          <NameOfHousing>Deep litter</NameOfHousing>
+          <LivestockType>3</LivestockType>
+          <Species_group>1</Species_group>
+          <PropTime>1</PropTime>
+          <HerdID>5</HerdID>
+          <ManureRecipient>
+            <Identity>7</Identity>
+            <StorageType>3</StorageType>
+            <StorageName>Dunghill without cover</StorageName>
+            <Stable>6</Stable>
+            <HerdID>5</HerdID>
+            <LivestockType>3</LivestockType>
+            <Species_group>1</Species_group>
+          </ManureRecipient>
+        </Housing>
+      </Livestock>
+      <Livestock>
+        <Identity>6</Identity>
+        <Species_group>1</Species_group>
+        <LivestockType>19</LivestockType>
+        <NameOfAnimals>Holstein - calves</NameOfAnimals>
+        <NumberOfAnimals>40.00</NumberOfAnimals>
+        <avgProductionMilk>0</avgProductionMilk>
+        <avgProductionMeat>8500</avgProductionMeat>
+        <ProductionLevel3>0</ProductionLevel3>
+        <ScenarioID>1</ScenarioID>
+        <HerdID>5</HerdID>
+        <itemFed>
+          <Identity>7</Identity>
+          <FeedCode>308</FeedCode>
+          <Name>Full-cream milk, large breeds</Name>
+          <Amount>2.6</Amount>
           <Grazed>false</Grazed>
           <LivestockType>3</LivestockType>
           <Species_group>1</Species_group>

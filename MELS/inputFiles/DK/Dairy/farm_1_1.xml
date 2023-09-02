@@ -8,7 +8,7 @@
     <FarmOwnerZipCode />
     <FarmOwnerTown />
     <FarmDescription />
-    <AgroEcologicalZone>15</AgroEcologicalZone>
+    <AgroEcologicalZone>17</AgroEcologicalZone>
     <GeographicalZone>West</GeographicalZone>
     <FarmType>1</FarmType>
     <FarmTypeDescription>Case1</FarmTypeDescription>
