@@ -3315,7 +3315,7 @@
       <Description>The concentration of lignin (=acid detergent fibre)</Description>
     </Fibre_concentration>
     <NDF_concentration>
-      <Value color="green">-1</Value>
+      <Value color="green">0.45</Value>
       <Unit>kg/kgDM</Unit>
       <Description>Concentration of neutral detergent fibre</Description>
     </NDF_concentration>
@@ -5655,7 +5655,7 @@
       <Description>The concentration of lignin (=acid detergent fibre)</Description>
     </Fibre_concentration>
     <NDF_concentration>
-      <Value color="green">-1</Value>
+      <Value color="green">0.22</Value>
       <Unit>kg/kgDM</Unit>
       <Description>Concentration of neutral detergent fibre</Description>
     </NDF_concentration>
@@ -11555,7 +11555,7 @@
       <Description>The concentration of lignin (=acid detergent fibre)</Description>
     </Fibre_concentration>
     <NDF_concentration>
-      <Value color="green">-1</Value>
+      <Value color="green">0.25</Value>
       <Unit>kg/kgDM</Unit>
       <Description>Concentration of neutral detergent fibre</Description>
     </NDF_concentration>
@@ -13835,7 +13835,7 @@
       <Description>The concentration of lignin (=acid detergent fibre)</Description>
     </Fibre_concentration>
     <NDF_concentration>
-      <Value color="green">-1</Value>
+      <Value color="green">0.23</Value>
       <Unit>kg/kgDM</Unit>
       <Description>Concentration of neutral detergent fibre</Description>
     </NDF_concentration>
@@ -17939,6 +17939,246 @@
     </Bedding_material>
     <processStorageLoss>
       <Value color="green">0.0</Value>
+      <Unit>-</Unit>
+      <Description>Proportion of DM, C and N lost during processing or storage</Description>
+    </processStorageLoss>
+  </feedItem>
+  <feedItem>
+    <Identity>335</Identity>
+    <Name color="green">Sodium Chloride</Name>
+    <FeedCode color="red">927</FeedCode>
+    <Main>
+      <Value color="green">true</Value>
+      <Unit>none</Unit>
+      <Description>Is true if this item is the main product of the crop</Description>
+    </Main>
+    <Fibre_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>The concentration of lignin (=acid detergent fibre)</Description>
+    </Fibre_concentration>
+    <NDF_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of nitrogen-free extract (=sugar and starch)</Description>
+    </NDF_concentration>
+    <CrudeProtein_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of crude protein (= 6.25 times nitrogen concentration)</Description>
+    </CrudeProtein_concentration>
+    <Fat_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of fat</Description>
+    </Fat_concentration>
+    <Energy_concentration>
+      <Value color="green">0</Value>
+      <Unit>MJ/kgDM</Unit>
+      <Description>Concentration of digestible energy</Description>
+    </Energy_concentration>
+    <Ash_concentration>
+      <Value color="green">0.993</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of ash</Description>
+    </Ash_concentration>
+    <Nitrate_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Nitrate concentration</Description>
+    </Nitrate_concentration>
+    <DMDigestibility>
+      <Value color="green">0.996</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Dry matter digestibility</Description>
+    </DMDigestibility>
+    <Bedding_material>
+      <Value color="green">false</Value>
+      <Unit>Boolean</Unit>
+      <Description>Is true if this item can be used as bedding</Description>
+    </Bedding_material>
+    <processStorageLoss>
+      <Value color="green">0</Value>
+      <Unit>-</Unit>
+      <Description>Proportion of DM, C and N lost during processing or storage</Description>
+    </processStorageLoss>
+  </feedItem>
+  <feedItem>
+    <Identity>336</Identity>
+    <Name color="green">Calcium carbonate </Name>
+    <FeedCode color="red">928</FeedCode>
+    <Main>
+      <Value color="green">true</Value>
+      <Unit>none</Unit>
+      <Description>Is true if this item is the main product of the crop</Description>
+    </Main>
+    <Fibre_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>The concentration of lignin (=acid detergent fibre)</Description>
+    </Fibre_concentration>
+    <NDF_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of nitrogen-free extract (=sugar and starch)</Description>
+    </NDF_concentration>
+    <CrudeProtein_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of crude protein (= 6.25 times nitrogen concentration)</Description>
+    </CrudeProtein_concentration>
+    <Fat_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of fat</Description>
+    </Fat_concentration>
+    <Energy_concentration>
+      <Value color="green">0</Value>
+      <Unit>MJ/kgDM</Unit>
+      <Description>Concentration of digestible energy</Description>
+    </Energy_concentration>
+    <Ash_concentration>
+      <Value color="green">0.993</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of ash</Description>
+    </Ash_concentration>
+    <Nitrate_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Nitrate concentration</Description>
+    </Nitrate_concentration>
+    <DMDigestibility>
+      <Value color="green">0.999</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Dry matter digestibility</Description>
+    </DMDigestibility>
+    <Bedding_material>
+      <Value color="green">false</Value>
+      <Unit>Boolean</Unit>
+      <Description>Is true if this item can be used as bedding</Description>
+    </Bedding_material>
+    <processStorageLoss>
+      <Value color="green">0</Value>
+      <Unit>-</Unit>
+      <Description>Proportion of DM, C and N lost during processing or storage</Description>
+    </processStorageLoss>
+  </feedItem>
+  <feedItem>
+    <Identity>337</Identity>
+    <Name color="green">Regulator </Name>
+    <FeedCode color="red">929</FeedCode>
+    <Main>
+      <Value color="green">true</Value>
+      <Unit>none</Unit>
+      <Description>Is true if this item is the main product of the crop</Description>
+    </Main>
+    <Fibre_concentration>
+      <Value color="green">10</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>The concentration of lignin (=acid detergent fibre)</Description>
+    </Fibre_concentration>
+    <NDF_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of nitrogen-free extract (=sugar and starch)</Description>
+    </NDF_concentration>
+    <CrudeProtein_concentration>
+      <Value color="green">30</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of crude protein (= 6.25 times nitrogen concentration)</Description>
+    </CrudeProtein_concentration>
+    <Fat_concentration>
+      <Value color="green">10</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of fat</Description>
+    </Fat_concentration>
+    <Energy_concentration>
+      <Value color="green">0</Value>
+      <Unit>MJ/kgDM</Unit>
+      <Description>Concentration of digestible energy</Description>
+    </Energy_concentration>
+    <Ash_concentration>
+      <Value color="green">0.993</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of ash</Description>
+    </Ash_concentration>
+    <Nitrate_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Nitrate concentration</Description>
+    </Nitrate_concentration>
+    <DMDigestibility>
+      <Value color="green">0.999</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Dry matter digestibility</Description>
+    </DMDigestibility>
+    <Bedding_material>
+      <Value color="green">false</Value>
+      <Unit>Boolean</Unit>
+      <Description>Is true if this item can be used as bedding</Description>
+    </Bedding_material>
+    <processStorageLoss>
+      <Value color="green">0</Value>
+      <Unit>-</Unit>
+      <Description>Proportion of DM, C and N lost during processing or storage</Description>
+    </processStorageLoss>
+  </feedItem>
+  <feedItem>
+    <Identity>338</Identity>
+    <Name color="green">DDGS (Corn and Wheat)</Name>
+    <FeedCode color="red">930</FeedCode>
+    <Main>
+      <Value color="green">true</Value>
+      <Unit>none</Unit>
+      <Description>Is true if this item is the main product of the crop</Description>
+    </Main>
+    <Fibre_concentration>
+      <Value color="green">0.079</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>The concentration of lignin (=acid detergent fibre)</Description>
+    </Fibre_concentration>
+    <NDF_concentration>
+      <Value color="green">0.341</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of nitrogen-free extract (=sugar and starch)</Description>
+    </NDF_concentration>
+    <CrudeProtein_concentration>
+      <Value color="green">0.334</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of crude protein (= 6.25 times nitrogen concentration)</Description>
+    </CrudeProtein_concentration>
+    <Fat_concentration>
+      <Value color="green">0.083</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of fat</Description>
+    </Fat_concentration>
+    <Energy_concentration>
+      <Value color="green">20.95</Value>
+      <Unit>MJ/kgDM</Unit>
+      <Description>Concentration of digestible energy</Description>
+    </Energy_concentration>
+    <Ash_concentration>
+      <Value color="green">0.0565</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Concentration of ash</Description>
+    </Ash_concentration>
+    <Nitrate_concentration>
+      <Value color="green">0</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Nitrate concentration</Description>
+    </Nitrate_concentration>
+    <DMDigestibility>
+      <Value color="green">0.785</Value>
+      <Unit>kg/kgDM</Unit>
+      <Description>Dry matter digestibility</Description>
+    </DMDigestibility>
+    <Bedding_material>
+      <Value color="green">false</Value>
+      <Unit>Boolean</Unit>
+      <Description>Is true if this item can be used as bedding</Description>
+    </Bedding_material>
+    <processStorageLoss>
+      <Value color="green">0</Value>
       <Unit>-</Unit>
       <Description>Proportion of DM, C and N lost during processing or storage</Description>
     </processStorageLoss>

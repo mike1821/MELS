@@ -15294,6 +15294,151 @@
         <Description>efficiency of nitrate in feed in reducing methane emissions</Description>
       </nitrateEfficiency>
     </Livestock>
+    <Livestock>
+      <Identity>19</Identity>
+      <Description>Details of livestock</Description>
+      <Name>Holstein - calves</Name>
+      <SpeciesGroup>
+        <Identity>0</Identity>
+        <Value>1</Value>
+        <Description>To which species group livestock belongs (1 = cattle, 2 = pigs)</Description>
+      </SpeciesGroup>
+      <efficiencyProteinMilk>
+        <Identity>0</Identity>
+        <Value>0.7</Value>
+        <Description>f</Description>
+      </efficiencyProteinMilk>
+      <LivestockType>
+        <Identity>0</Identity>
+        <Value>19</Value>
+        <Description>Subdivision of species group</Description>
+      </LivestockType>
+      <isRuminant>
+        <Identity>0</Identity>
+        <Value color="green">true</Value>
+        <Units>none</Units>
+        <Description>true if the livestock are ruminants</Description>
+      </isRuminant>
+      <isDairy>
+        <Identity>0</Identity>
+        <Value>false</Value>
+        <Units>none</Units>
+        <Description>true if the livestock are dairy animals</Description>
+      </isDairy>
+      <Liveweight>
+        <Identity>0</Identity>
+        <Value color="green">100</Value>
+        <Units>kg</Units>
+        <Description>Mean live weight of livestock (optional)</Description>
+      </Liveweight>
+      <mu_base>
+        <Identity>0</Identity>
+        <Value color="red">0.25</Value>
+        <Units>Proportion per unit of energy intake, normalised by maintenance energy demand</Units>
+        <Description>Energy intake below which there is no reduction in utilisation of energy</Description>
+      </mu_base>
+      <mu_b>
+        <Identity>0</Identity>
+        <Value color="red">0</Value>
+        <Units>Proportion per unit of energy intake, normalised by maintenance energy demand</Units>
+        <Description>Rate of reduction in energy utilisation with increasing energy intake</Description>
+      </mu_b>
+      <milkCconc>
+        <Identity>0</Identity>
+        <Value color="red">0</Value>
+        <Units>kg/kg</Units>
+        <Description>Concentration of carbon in milk</Description>
+      </milkCconc>
+      <milkNconc>
+        <Identity>0</Identity>
+        <Value color="green">0</Value>
+        <Units>kg/kg</Units>
+        <Description>Concentration of nitrogen in milk</Description>
+      </milkNconc>
+	   <milkFat>
+        <Identity>0</Identity>  	
+        <Value>0</Value>
+        <Units>g/kg</Units>
+        <Description>Concentration of fat in milk</Description>				
+	   </milkFat>
+      <growthNconc>
+        <Identity>0</Identity>
+        <Value color="red">0.026</Value>
+        <Units>kg/kg</Units>
+        <Description>Concentration of nitrogen in animal growth</Description>
+      </growthNconc>
+      <growthCconc>
+        <Identity>0</Identity>
+        <Value color="red">0.232</Value>
+        <Units>kg/kg</Units>
+        <Description>Concentration of carbon in animal growth</Description>
+      </growthCconc>
+      <maintenanceEnergyCoeff>
+        <Identity>0</Identity>
+        <Value color="red">1.2</Value>
+        <Units>none</Units>
+        <Description>Coefficient in calculation of maintenance energy requirement</Description>
+      </maintenanceEnergyCoeff>
+      <growthEnergyDemandCoeff>
+        <Identity>0</Identity>
+        <Value color="red">23.0</Value>
+        <Units>MJ/kg</Units>
+        <Description>Energy requirement per unit growth</Description>
+      </growthEnergyDemandCoeff>
+      <milkAdjustmentCoeff>
+        <Identity>0</Identity>
+        <Value color="red">1</Value>
+        <Units>MJ/kg</Units>
+        <Description>Energy requirement per unit of milk produced</Description>
+      </milkAdjustmentCoeff>
+      <urineProp>
+        <Identity>0</Identity>
+        <Value color="red">0.04</Value>
+        <Units>kg/kg</Units>
+        <Description>Proportion of carbon excreted in urine</Description>
+      </urineProp>
+      <weightGainDairy>
+        <Identity>0</Identity>
+        <Value>0</Value>
+        <Units>kg</Units>
+        <Description>Weight gain of dairy animals</Description>
+      </weightGainDairy>
+      <HousedDuringGrazing>
+        <Value color="green">false</Value>
+        <Units>None</Units>
+        <Description>Is true if animals are housing during part of the day when grazed</Description>
+      </HousedDuringGrazing>
+      <Age>
+        <Identity>0</Identity>
+        <Value color="green">0.5</Value>
+        <Units>years</Units>
+        <Description>Mean age of livestock</Description>
+      </Age>
+	   <entericTier2MCF>
+        <Identity>0</Identity>
+        <Value color="green">0.07</Value>
+        <Units>kg methane per MJ energy intake</Units>
+        <Description>Methan conversion factor</Description>
+      </entericTier2MCF>
+      <Mortality>
+        <Identity>0</Identity>
+        <Value color="green">0.061</Value>
+        <Units>-</Units>
+        <Description>Proportion of livestock dying on the farm</Description>
+      </Mortality>
+      <nitrateEfficiency>
+        <Identity>0</Identity>
+        <Value>0.8</Value>
+        <Units>kg methane oxidized per kg nitrate</Units>
+        <Description>efficiency of nitrate in feed in reducing methane emissions</Description>
+      </nitrateEfficiency>
+      <Bo>
+        <Identity>0</Identity>
+        <Value>0.18</Value>
+        <Units>cubic metres methane per kg volatile solids</Units>
+        <Description>IPCC methane factor</Description>
+      </Bo>
+    </Livestock>
     <Housing>
       <Identity>1</Identity>
       <HousingType>1</HousingType>
@@ -18683,6 +18828,67 @@
       </MaximumRootingDepth>
       <BelowGroundCtoN>
         <Value color="red">33.0</Value>
+        <Units>none</Units>
+        <Description>Ratio of carbon to nitrogen in below-ground dry matter</Description>
+      </BelowGroundCtoN>
+      <Irrigation>
+        <Description>Parameters for irrigation</Description>
+        <irrigationThreshold>
+          <Value color="red">0.5</Value>
+          <Units>none</Units>
+          <Description>Proportion of plant-available soil water that must be depleted before irrigation begins</Description>
+        </irrigationThreshold>
+        <irrigationMinimum>
+          <Value color="red">5.0</Value>
+          <Units>mm</Units>
+          <Description>Minimum application of irrigation water</Description>
+        </irrigationMinimum>
+      </Irrigation>
+    </Crop>
+    <Crop>
+      <Identity>19</Identity>
+      <Name color="green">Ryegrass/oats</Name>
+      <Description>Details of crops</Description>
+      <NfixationFactor>
+        <Value color="green">-1.0</Value>
+        <Units>kg N/kg mineral N available</Units>
+        <Description>Rate of reduction in N fixation with increasing mineral N availability</Description>
+      </NfixationFactor>
+      <HarvestMethod>
+        <Identity>1</Identity>
+        <Name color="green">Forage harvester</Name>
+        <PropAboveGroundResidues>
+          <Value color="green">0.1</Value>
+          <Units>kg DM/kg DM</Units>
+          <Description>Above-ground yield of dry matter that cannot be harvested</Description>
+        </PropAboveGroundResidues>
+      </HarvestMethod>
+      <HarvestMethod>
+        <Identity>2</Identity>
+        <Name color="green">Grazing</Name>
+        <PropAboveGroundResidues>
+          <Value color="green">1.00</Value>
+          <Units>kg DM/kg DM</Units>
+          <Description>Above-ground yield of dry matter that cannot be harvested</Description>
+        </PropAboveGroundResidues>
+      </HarvestMethod>
+      <PropBelowGroundResidues>
+        <Value color="green">0.65</Value>
+        <Units>kg DM/kg DM</Units>
+        <Description>The below-ground crop residues (e.g. roots), as a proportion of the DM yield</Description>
+      </PropBelowGroundResidues>
+      <BelowGroundCconc>
+        <Value color="red">0.40</Value>
+        <Units>none</Units>
+        <Description>Carbon concentration in below-ground dry matter</Description>
+      </BelowGroundCconc>
+      <MaximumRootingDepth>
+        <Value color="red">0.8</Value>
+        <Units>metres</Units>
+        <Description>Maximum rooting depth, if not restricted by soil depth</Description>
+      </MaximumRootingDepth>
+      <BelowGroundCtoN>
+        <Value color="red">20.0</Value>
         <Units>none</Units>
         <Description>Ratio of carbon to nitrogen in below-ground dry matter</Description>
       </BelowGroundCtoN>
@@ -33944,6 +34150,151 @@
         <Units>kg methane oxidized per kg nitrate</Units>
         <Description>efficiency of nitrate in feed in reducing methane emissions</Description>
       </nitrateEfficiency>
+    </Livestock>
+    <Livestock>
+      <Identity>19</Identity>
+      <Description>Details of livestock</Description>
+      <Name>Holstein - calves</Name>
+      <SpeciesGroup>
+        <Identity>0</Identity>
+        <Value>1</Value>
+        <Description>To which species group livestock belongs (1 = cattle, 2 = pigs)</Description>
+      </SpeciesGroup>
+      <efficiencyProteinMilk>
+        <Identity>0</Identity>
+        <Value>0.7</Value>
+        <Description>f</Description>
+      </efficiencyProteinMilk>
+      <LivestockType>
+        <Identity>0</Identity>
+        <Value>19</Value>
+        <Description>Subdivision of species group</Description>
+      </LivestockType>
+      <isRuminant>
+        <Identity>0</Identity>
+        <Value color="green">true</Value>
+        <Units>none</Units>
+        <Description>true if the livestock are ruminants</Description>
+      </isRuminant>
+      <isDairy>
+        <Identity>0</Identity>
+        <Value>false</Value>
+        <Units>none</Units>
+        <Description>true if the livestock are dairy animals</Description>
+      </isDairy>
+      <Liveweight>
+        <Identity>0</Identity>
+        <Value color="green">100</Value>
+        <Units>kg</Units>
+        <Description>Mean live weight of livestock (optional)</Description>
+      </Liveweight>
+      <mu_base>
+        <Identity>0</Identity>
+        <Value color="red">0.25</Value>
+        <Units>Proportion per unit of energy intake, normalised by maintenance energy demand</Units>
+        <Description>Energy intake below which there is no reduction in utilisation of energy</Description>
+      </mu_base>
+      <mu_b>
+        <Identity>0</Identity>
+        <Value color="red">0</Value>
+        <Units>Proportion per unit of energy intake, normalised by maintenance energy demand</Units>
+        <Description>Rate of reduction in energy utilisation with increasing energy intake</Description>
+      </mu_b>
+      <milkCconc>
+        <Identity>0</Identity>
+        <Value color="red">0</Value>
+        <Units>kg/kg</Units>
+        <Description>Concentration of carbon in milk</Description>
+      </milkCconc>
+      <milkNconc>
+        <Identity>0</Identity>
+        <Value color="green">0</Value>
+        <Units>kg/kg</Units>
+        <Description>Concentration of nitrogen in milk</Description>
+      </milkNconc>
+	   <milkFat>
+        <Identity>0</Identity>  	
+        <Value>0</Value>
+        <Units>g/kg</Units>
+        <Description>Concentration of fat in milk</Description>				
+	   </milkFat>
+      <growthNconc>
+        <Identity>0</Identity>
+        <Value color="red">0.026</Value>
+        <Units>kg/kg</Units>
+        <Description>Concentration of nitrogen in animal growth</Description>
+      </growthNconc>
+      <growthCconc>
+        <Identity>0</Identity>
+        <Value color="red">0.232</Value>
+        <Units>kg/kg</Units>
+        <Description>Concentration of carbon in animal growth</Description>
+      </growthCconc>
+      <maintenanceEnergyCoeff>
+        <Identity>0</Identity>
+        <Value color="red">1.2</Value>
+        <Units>none</Units>
+        <Description>Coefficient in calculation of maintenance energy requirement</Description>
+      </maintenanceEnergyCoeff>
+      <growthEnergyDemandCoeff>
+        <Identity>0</Identity>
+        <Value color="red">23.0</Value>
+        <Units>MJ/kg</Units>
+        <Description>Energy requirement per unit growth</Description>
+      </growthEnergyDemandCoeff>
+      <milkAdjustmentCoeff>
+        <Identity>0</Identity>
+        <Value color="red">1</Value>
+        <Units>MJ/kg</Units>
+        <Description>Energy requirement per unit of milk produced</Description>
+      </milkAdjustmentCoeff>
+      <urineProp>
+        <Identity>0</Identity>
+        <Value color="red">0.04</Value>
+        <Units>kg/kg</Units>
+        <Description>Proportion of carbon excreted in urine</Description>
+      </urineProp>
+      <weightGainDairy>
+        <Identity>0</Identity>
+        <Value>0</Value>
+        <Units>kg</Units>
+        <Description>Weight gain of dairy animals</Description>
+      </weightGainDairy>
+      <HousedDuringGrazing>
+        <Value color="green">false</Value>
+        <Units>None</Units>
+        <Description>Is true if animals are housing during part of the day when grazed</Description>
+      </HousedDuringGrazing>
+      <Age>
+        <Identity>0</Identity>
+        <Value color="green">0.5</Value>
+        <Units>years</Units>
+        <Description>Mean age of livestock</Description>
+      </Age>
+	   <entericTier2MCF>
+        <Identity>0</Identity>
+        <Value color="green">0.07</Value>
+        <Units>kg methane per MJ energy intake</Units>
+        <Description>Methan conversion factor</Description>
+      </entericTier2MCF>
+      <Mortality>
+        <Identity>0</Identity>
+        <Value color="green">0.061</Value>
+        <Units>-</Units>
+        <Description>Proportion of livestock dying on the farm</Description>
+      </Mortality>
+      <nitrateEfficiency>
+        <Identity>0</Identity>
+        <Value>0.8</Value>
+        <Units>kg methane oxidized per kg nitrate</Units>
+        <Description>efficiency of nitrate in feed in reducing methane emissions</Description>
+      </nitrateEfficiency>
+      <Bo>
+        <Identity>0</Identity>
+        <Value>0.18</Value>
+        <Units>cubic metres methane per kg volatile solids</Units>
+        <Description>IPCC methane factor</Description>
+      </Bo>
     </Livestock>
     <Housing>
       <Identity>1</Identity>
