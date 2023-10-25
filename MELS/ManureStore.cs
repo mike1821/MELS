@@ -237,6 +237,7 @@ public class manureStore
         ohmTAN = manureParamFile.getItemDouble("Value");
         manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "MCF";
         MCF = manureParamFile.getItemDouble("Value");
+        Bo = manureParamFile.getItemDouble("Value");
         //MELS-2023
         if(GlobalVars.Instance.GetLocation() == "East"){
             manureParamFile.PathNames[manureParamFile.PathNames.Count - 1] = "AWMSEast";
@@ -479,7 +480,7 @@ public class manureStore
                         case 10: isCovered = true;
                             break;
                     }
-                    if (GlobalVars.Instance.getcurrentInventorySystem() == 1)
+                    if (GlobalVars.Instance.getcurrentInventorySystem() == 1 && AWMS!=0)
                     {
                         if (theManure.GetisSolid())
                         {
@@ -499,8 +500,16 @@ public class manureStore
                         }
                     }
                 }
-                double Bo = theManure.GetBo();
-                CCH4ST = (1 / GlobalVars.Instance.getalpha()) * (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) * (Bo * 0.67 * MCF);//1.46
+
+                if(AWMS!=0)
+                {
+                    double Bo = theManure.GetBo();
+                }
+                else
+                {
+                    
+                }
+                // CCH4ST = (1 / GlobalVars.Instance.getalpha()) * (theManure.GetdegC() + theManure.GetnonDegC() + theManure.GethumicC()) * (Bo * 0.67 * MCF);//1.46
                 // double fT=Math.Exp(((-1.22*100000)/rgas)*((1/(meanTemp + GlobalVars.absoluteTemp))-(1/(15.0 + GlobalVars.absoluteTemp))));
                 // double km = 0.39;
 
