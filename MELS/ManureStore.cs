@@ -18,6 +18,7 @@ public class manureStore
     double MCF; //needs to be AEZ specific
     //MELS-2023
     double AWMS;
+    double Bo;
     double EFStoreNH3;
     double EFStoreN20;
     double Lambda;
@@ -409,7 +410,7 @@ public class manureStore
         double temp = theManure.GetnonDegC() + theManure.GetdegC() +theManure.GetTAN() + theManure.GetorganicN();
         if (temp > 0.0)
         {
-            double Bo = theManure.GetBo();
+            Bo = theManure.GetBo();
             if (supplementaryFeedstock.Count > 0)
             {
                 double degSupplC = 0;
@@ -503,7 +504,7 @@ public class manureStore
 
                 if(AWMS!=0)
                 {
-                    double Bo = theManure.GetBo();
+                    Bo = theManure.GetBo();
                 }
                 else
                 {
